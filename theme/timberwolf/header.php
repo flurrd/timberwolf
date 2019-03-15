@@ -16,8 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
+	<link href="https://fonts.googleapis.com/css?family=Domine:400,700|Istok+Web:400,700" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -43,7 +43,6 @@
 				<p class="site-description"><?php echo $timberwolf_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'timberwolf' ); ?></button>
 			<?php
@@ -52,7 +51,7 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
+	</nav><!-- #site-navigation -->		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

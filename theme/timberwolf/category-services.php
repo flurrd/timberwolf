@@ -13,9 +13,7 @@ get_header();
 	<div id="primary" class="content-area site-max-width">
 		<main id="main" class="site-main">
 
-        <h3>Category Services Template</h3>
-
- 
+        <small>Category Services Template</small>
 
 	<?php if (have_posts() ) : ?>
 
@@ -28,7 +26,7 @@ get_header();
 
 
 
-            <div class="publications-list">
+            <div class="category-list">
 
 			<?php
 			/* Start the Loop */

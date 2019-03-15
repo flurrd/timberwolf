@@ -1,17 +1,16 @@
-.publications-list {
+.category-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-
-.publication-archive-item {
+.service-archive-item {
 	margin: 10px;
 	min-width: 120px;
 	display: flex;
 	flex: 1 0 calc(50% - 20px);
 }
 
-.publication-item__cover-wrap {
+.service-item__cover-wrap {
 	padding: 1.5rem;
 	background: #e3e3e3;
 	display: flex;
@@ -19,12 +18,10 @@
 	align-items: center;
 }
 
-.publication-item__cover-wrap img {
+.service-item__cover-wrap img {
 	width: 200px;
 }
 
-
-.publication-item__content-wrap {
+.service-item__content-wrap {
 	flex: 1;
-	border: 1px solid #e3e3e3
 }

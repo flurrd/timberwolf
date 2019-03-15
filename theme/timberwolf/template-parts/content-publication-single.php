@@ -9,18 +9,18 @@
 
 ?>
 
-<article class="publication-post site-max-width" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="service-post site-max-width" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<h3>Content-Publication Template</h3>
 
 	<div class="pubication-flex-wrapper">
 
-		<div class="publication-cover">
+		<div class="service-cover">
 			<?php timberwolf_post_thumbnail(); ?>
 		</div>
 
 
-		<div class="publication-rte">
+		<div class="service-rte">
 
 			<header class="entry-header">
 				<?php

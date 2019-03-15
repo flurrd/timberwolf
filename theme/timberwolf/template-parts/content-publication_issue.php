@@ -10,16 +10,16 @@
 ?>
 
 
-<article class="publication-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="service-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <div class="publication-item__cover-wrap">
-            <div class="publication-cover">
+        <div class="service-item__cover-wrap">
+            <div class="service-cover">
                 <?php timberwolf_post_thumbnail(); ?>
             </div>
         </div>
 
-        <div class="publication-item__content-wrap">
-            <div class="publication-rte">
+        <div class="service-item__content-wrap">
+            <div class="service-rte">
 
                 <header class="entry-header">
                     <?php

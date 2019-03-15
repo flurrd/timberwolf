@@ -5,7 +5,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #6b0000;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -15,6 +15,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: 'Domine', serif;
 }
 
 p {
@@ -81,7 +82,14 @@ html {
 
 body {
 	background: #fff;
+	font-family: 'Domine', serif;
 	/* Fallback for when there is no custom background color defined. */
+}
+
+
+
+nav {
+	font-family: 'Istok Web', sans-serif;
 }
 
 hr {
@@ -132,4 +140,8 @@ figure {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+}
+
+button {
+	font-family: 'Istok Web', sans-serif;
 }

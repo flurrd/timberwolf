@@ -26,7 +26,7 @@
         </header>
 
 
-            <div class="publications-list">
+            <div class="category-list">
 
             <?php
 

@@ -127,7 +127,7 @@ function timberwolf_scripts() {
 	wp_enqueue_script('timberwolf-vendor');
 
 	//Global scripts common to all pages
-    wp_register_script( 'timberwolf-main', get_template_directory_uri() . '/dist/main.js', array(), date("H:i:s"), true );
+  wp_register_script( 'timberwolf-main', get_template_directory_uri() . '/dist/main.js', array(), date("H:i:s"), true );
 	wp_enqueue_script('timberwolf-main');
 
 	wp_enqueue_style( 'timberwolf-main-style', get_template_directory_uri() . '/dist/main.css', array(), date("H:i:s"));
@@ -141,7 +141,6 @@ function timberwolf_scripts() {
 	//Conditionally include template specific scripts
     if(is_front_page()){
 		wp_enqueue_script('timberwolf-home');
-		wp_enqueue_style( 'timberwolf-home-style', get_template_directory_uri() . '/dist/home.css', array(), date("H:i:s"));
     }
 	if ( is_singular()) {
 		wp_enqueue_script( 'timberwolf-single' );

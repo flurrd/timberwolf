@@ -47,7 +47,7 @@ get_header();
 
 
 
-            <div class="publications-list">
+            <div class="category-list">
 
 			<?php
 			/* Start the Loop */

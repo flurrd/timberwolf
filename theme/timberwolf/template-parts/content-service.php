@@ -10,20 +10,20 @@
 ?>
 
 
-<article class="publication-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="service-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<!--         <div class="publication-item__cover-wrap">
-            <div class="publication-cover">
+<!--         <div class="service-item__cover-wrap">
+            <div class="service-cover">
                 
             </div>
         </div> -->
 
-        <div class="publication-item__content-wrap">
-            <div class="publication-rte">
+        <div class="service-item__content-wrap">
+            <div class="service-rte">
 
                 <header class="entry-header">
                     <?php
-						the_title( '<h4 class="entry-title">', '</h4>' );
+						the_title( '<h2 class="entry-title">', '</h2>' );
                     ?>
                     <?php the_excerpt() ?>
                     <?php timberwolf_post_thumbnail(); ?>
