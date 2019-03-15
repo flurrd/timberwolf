@@ -1,0 +1,193 @@
+
+
+.d-flex {
+	display: flex;
+}
+
+.d-none {
+	display: none;
+}
+
+.just-cont-center {
+	justify-content: center;
+}
+
+
+.d-block {
+	display: block !important;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.hide-below-600w {
+	@media(max-width: 600px){
+		display: none !important;
+	}
+}
+
+.hide-below-350w {
+	@media(max-width: 350px){
+		display: none !important;
+	}
+}
+.align-flex-start {
+	align-items: flex-start;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+
+.padding-1 {
+	padding: 15px;
+}
+
+.padding-2 {
+	padding: 30px;
+}
+
+.padding-3 {
+	padding: 45px;
+}
+
+
+.mar-l-auto {
+	margin-left: auto;
+}
+.mar-r-1 {
+	margin-right: 15px !important;
+}
+
+.mar-b-0 {
+	margin-bottom: 0 !important;
+}
+
+
+.mar-t-0 {
+	margin-top: 0 !important;
+}
+
+.mar-t-1 {
+	margin-top: 15px !important;
+}
+.mar-t-2 {
+	margin-top: 30px !important;
+}
+.mar-t-3 {
+	margin-top: 45px !important;
+}
+.mar-b-2 {
+	margin-bottom: 30px !important;
+}
+.mar-b-1 {
+	margin-bottom: 15px !important;
+}
+
+
+.padd-t-1 {
+	padding-top: 15px !important;
+}
+.padd-t-2 {
+	padding-top: 30px !important;
+}
+.padd-t-3 {
+	padding-top: 45px !important;
+}
+
+.padd-b-1 {
+	padding-bottom: 15px !important;
+}
+
+.padd-b-2 {
+	padding-bottom: 30px !important;
+}
+
+.padd-b-3 {
+	padding-bottom: 45px !important;
+}
+
+
+.padd-l-1 {
+	padding-left: 15px !important;
+}
+.padd-l-2 {
+	padding-left: 30px !important;
+}
+.padd-l-3 {
+	padding-left: 45px !important;
+}
+
+
+.padd-r-1 {
+	padding-right: 15px !important;
+}
+.padd-r-2 {
+	padding-right: 30px !important;
+}
+.padd-r-3 {
+	padding-right: 45px !important;
+}
+
+
+
+
+
+
+
+
+.float-left {
+	float: left
+}
+
+
+.no-margin {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+
+
+.d-inline-b {
+	display: inline-block;
+}
+
+.list-unstyled {
+	list-style: none;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.center {
+	margin-left:auto !important;
+	margin-right: auto !important;
+}
+
+%clearfix {
+	&::before,
+	&::after {
+	  display: table;
+	  content: "";
+	}
+	&::after {
+	  clear: both;
+	}
+  }
+
+  /* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; } 
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-left {
+	text-align: left !important;
+}

@@ -1,0 +1,22 @@
+$root-font-size: 16px;
+$color-text: #3d3d3d;
+$color-borders: #e3e3e3;
+
+$primary-ss-fontfam: "proxima-nova", sans-serif;  
+$primary-ss-bold-weight: 700;
+
+$font-body: $primary-ss-fontfam;  //bold 700, regular 400, 
+$font-title:"proxima-nova", sans-serif;
+$font-label:"proxima-nova", sans-serif;
+
+$site-max-width: 1300px;
+
+$mobile-nav-visible-max: 870px;
+
+$ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+// Breakpoints
+$breakpoint-sml: 760px;
+$breakpoint-med: 960px;
+$breakpoint-lrg: 1200px;

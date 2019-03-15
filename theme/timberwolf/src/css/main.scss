@@ -1,0 +1,41 @@
+
+@import "_global-variables.scss";
+@import "_normalize.scss";
+@import "_clearings.scss";
+@import "_typography.scss";
+@import "_forms.scss";
+@import "_buttons.scss";
+@import "_media.scss";
+@import "_utilities.scss";
+
+
+
+.site-max-width {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.competition-category {
+	margin: 10px;
+}
+
+.competition-category__image-link {
+	display: block;
+}
+
+.online-puzzle-wrapper {
+	padding:  5%;
+	background: #e3e3e3;
+}
+
+.dataTables_filter {
+	display: none;
+}
+
+.on-sale-dates-wrapper {
+	max-width: 950px;
+}
+

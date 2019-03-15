@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Vendor files
+node_modules
+theme/timberwolf/node_modules
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+*.csproj.user
+obj/
+*.suo
+*.csproj.user
+*.DotSettings.user
+
+
+# Changelog
+CHANGELOG.md
+
