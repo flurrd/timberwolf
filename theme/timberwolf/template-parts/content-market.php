@@ -9,25 +9,25 @@
 
 ?>
 
+
 <article class="publication-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-
-
-        <div class="publication-item__cover-wrap">
+<!--         <div class="publication-item__cover-wrap">
             <div class="publication-cover">
-                <?php timberwolf_post_thumbnail(); ?>
+                
             </div>
-        </div>
+        </div> -->
 
         <div class="publication-item__content-wrap">
             <div class="publication-rte">
 
                 <header class="entry-header">
+                    <?php timberwolf_post_thumbnail(); ?>
                     <?php
-                        the_title( '<h4 class="entry-title">', '</h4>' );
-                        
+						the_title( '<h4 class="entry-title">', '</h4>' );
                     ?>
                     <?php the_excerpt() ?>
+                    
                     
                     <a class="btn" href="<?php echo get_permalink(); ?>"> Read More...</a>
                 </header><!-- .entry-header -->

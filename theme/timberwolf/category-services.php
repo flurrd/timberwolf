@@ -13,11 +13,9 @@ get_header();
 	<div id="primary" class="content-area site-max-width">
 		<main id="main" class="site-main">
 
-        <h3>Category Publications Template</h3>
+        <h3>Category Services Template</h3>
 
  
-
-
 
 	<?php if (have_posts() ) : ?>
 

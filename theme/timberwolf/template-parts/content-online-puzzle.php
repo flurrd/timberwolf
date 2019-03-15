@@ -52,6 +52,6 @@
 
 
 	<footer class="entry-footer">
-		<?php lovatts_puzzles_entry_footer(); ?>
+		<?php timberwolf_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

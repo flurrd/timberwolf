@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'timberwolf' ); ?></a>
 
-	<header id="masthead" class="site-header site-max-width ">
+	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -37,10 +37,10 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$lovatts_puzzles_description = get_bloginfo( 'description', 'display' );
-			if ( $lovatts_puzzles_description || is_customize_preview() ) :
+			$timberwolf_description = get_bloginfo( 'description', 'display' );
+			if ( $timberwolf_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $lovatts_puzzles_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $timberwolf_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 

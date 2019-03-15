@@ -14,7 +14,7 @@
 
         <div class="publication-item__cover-wrap">
             <div class="publication-cover">
-                <?php lovatts_puzzles_post_thumbnail(); ?>
+                <?php timberwolf_post_thumbnail(); ?>
             </div>
         </div>
 
@@ -31,7 +31,7 @@
                 </header><!-- .entry-header -->
 
                 <footer class="entry-footer mar-t-1">
-                    <?php lovatts_puzzles_entry_footer(); ?>
+                    <?php timberwolf_entry_footer(); ?>
                 </footer><!-- .entry-footer -->
             </div>
  

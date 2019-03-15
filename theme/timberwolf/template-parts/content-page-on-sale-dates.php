@@ -16,7 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php lovatts_puzzles_post_thumbnail(); ?>
+	<?php timberwolf_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
