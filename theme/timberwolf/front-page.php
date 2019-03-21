@@ -13,7 +13,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 		<?php 
-echo do_shortcode('[smartslider3 slider=1]');
+echo do_shortcode('[smartslider3 slider=3]');
 ?>
 		<?php
 		while ( have_posts() ) :

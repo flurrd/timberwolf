@@ -12,29 +12,36 @@
 
 <article class="service-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<!--         <div class="service-item__cover-wrap">
-            <div class="service-cover">
-                
+        <div class="service-item__img-wrap">
+            <div class="service-img">
+                <?php timberwolf_post_thumbnail(); ?>                
             </div>
-        </div> -->
-
-        <div class="service-item__content-wrap">
             <div class="service-rte">
 
                 <header class="entry-header">
-                    <?php
+                <a href="<?php echo get_permalink(); ?>">    <?php
 						the_title( '<h2 class="entry-title">', '</h2>' );
                     ?>
+                </a>
                     <?php the_excerpt() ?>
-                    <?php timberwolf_post_thumbnail(); ?>
-                    <a class="btn" href="<?php echo get_permalink(); ?>"> Read More...</a>
+                    
+                    <!-- <a class="btn" href=""> Read More...</a> -->
                 </header><!-- .entry-header -->
 
                 <footer class="entry-footer mar-t-1">
                     <?php timberwolf_entry_footer(); ?>
                 </footer><!-- .entry-footer -->
             </div>
- 
+
+
         </div>
 
+ 
+
+
+
+
+
+
+        
 </article><!-- #post-<?php the_ID(); ?> -->

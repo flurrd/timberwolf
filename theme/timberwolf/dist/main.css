@@ -375,7 +375,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #6b0000;
+  color: #131313;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -717,6 +717,13 @@ object {
   margin-left: auto !important;
   margin-right: auto !important; }
 
+.clearfix::before, .clearfix::after {
+  display: table;
+  content: ""; }
+
+.clearfix::after {
+  clear: both; }
+
 /* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after {
   content: "";
@@ -733,6 +740,9 @@ object {
 
 .text-left {
   text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
 
 .site-max-width {
   max-width: 1300px;
@@ -780,50 +790,33 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
-  background: #161616; }
+  margin-left: auto; }
+  .main-navigation .top-menu-items {
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: flex-end; }
 
 .main-navigation ul {
   list-style: none;
   margin: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  display: flex; }
+  .main-navigation ul a {
+    color: white; }
 
-.main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 100%;
-  z-index: 99999; }
-
-.main-navigation ul ul ul {
-  top: 0; }
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-  left: 100%; }
-
-.main-navigation ul ul a {
-  width: 200px; }
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  left: auto; }
-
-.main-navigation li {
-  float: left;
-  position: relative; }
-
-.main-navigation a {
+.menu-main-navigation-container a {
   display: block;
   text-decoration: none;
-  padding: 25px 20px;
-  color: white; }
+  padding: 0.8rem 1rem;
+  color: white;
+  text-transform: uppercase; }
 
-.main-navigation a:hover {
-  background: #585858; }
+.menu-main-navigation-top-container a {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1.2rem 20px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -860,10 +853,24 @@ a:hover, a:active {
   display: none; }
 
 .site-header {
-  padding-top: 2rem; }
+  padding: 1rem;
+  background: #333F48; }
+
+.site-header-flex-container {
+  display: flex;
+  justify-content: start;
+  align-items: center; }
 
 .site-branding {
-  max-width: 250px;
-  padding-left: 1rem;
-  padding-bottom: 1rem; }
+  max-width: 180px;
+  margin-right: 1rem;
+  min-width: 130px; }
+  .site-branding svg {
+    width: 100%; }
+
+.site-footer {
+  background: #2e2426;
+  color: white; }
+  .site-footer a {
+    color: white; }
 

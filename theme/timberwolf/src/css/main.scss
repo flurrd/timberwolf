@@ -16,8 +16,6 @@
     margin-right: auto;
 }
 
-
-
 .competition-category {
 	margin: 10px;
 }
@@ -70,61 +68,48 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-	background: #161616;
+	margin-left: auto;
+
+	.top-menu-items {
+		width: 100%;
+		display: block;
+		display: flex;
+		justify-content: flex-end;
+	}
 }
 
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
-}
+	display: flex;
 
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
+	a {
+		color: white;
+	}
 }
 
 
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
-.main-navigation a {
+.menu-main-navigation-container  a {
 	display: block;
     text-decoration: none;
-	padding: 25px 20px;
+	padding: 0.8rem 1rem;
 	color: white;
+	text-transform: uppercase;
 }
 
+
+.menu-main-navigation-top-container  a {
+	display: block;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 1.2rem 20px;
+
+}
+
+
 .main-navigation a:hover {
-background: #585858;
+
 }
 
 
@@ -174,11 +159,33 @@ background: #585858;
 }
 
 .site-header {
-    padding-top: 2rem;
-}
-.site-branding {
-	max-width: 250px;
-	padding-left: 1rem;
-	padding-bottom: 1rem;
+	padding: 1rem;
+	background: #333F48;
 }
 
+
+.site-header-flex-container {
+
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+
+.site-branding {
+	max-width: 180px;
+	margin-right: 1rem;
+	min-width: 130px;
+
+	svg {
+		width: 100%;
+	}
+}
+
+.site-footer {
+    background: #2e2426;
+    color: white;
+    a {
+        color: white;
+    }
+}

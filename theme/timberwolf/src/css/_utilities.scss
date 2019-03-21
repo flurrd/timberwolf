@@ -168,7 +168,7 @@
 	margin-right: auto !important;
 }
 
-%clearfix {
+.clearfix {
 	&::before,
 	&::after {
 	  display: table;
@@ -190,4 +190,8 @@
 
 .text-left {
 	text-align: left !important;
+}
+
+.text-right {
+	text-align: right !important;
 }

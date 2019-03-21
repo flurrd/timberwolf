@@ -4,7 +4,8 @@
   "description": "Lovatts Puzzles - Wordpress / Webpack / Docker",
   "scripts": {
     "test": "test",
-    "start": "webpack --watch"
+    "start": "webpack --watch",
+    "build": "webpack"
   },
   "author": "Marcus Hall",
   "license": "ISC",
