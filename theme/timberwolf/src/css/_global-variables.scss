@@ -2,19 +2,60 @@ $root-font-size: 16px;
 $color-text: #3d3d3d;
 $color-borders: #e3e3e3;
 
-$primary-ss-fontfam: "proxima-nova", sans-serif;  
-$primary-ss-bold-weight: 700;
 
-$font-body: $primary-ss-fontfam;  //bold 700, regular 400, 
-$font-title:"proxima-nova", sans-serif;
-$font-label:"proxima-nova", sans-serif;
+
+
+
+$font-body:'Montserrat', sans-serif; 
+$font-title: $font-body;
+
+$font-label: $font-body;
+$font-nav: $font-body;
 
 $site-max-width: 1300px;
 
-$mobile-nav-visible-max: 870px;
+$mobile-nav-visible-max: 1085px;
 
 $ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 $ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+// Main colors 
+$brand-pink: #F5CBB8;
+$color-accent: #a10071;
+
+
+$color-brand-primary: #2f3a49;
+$color-logo-fill: white;
+
+$color-text: #231f20;
+$color-text-link: #a10071;
+$color-text-link--hover: #66094a;
+$color-text-title: #0c0c0c;
+$rootFontsize: 18px;
+
+$color-text-light: #7b7b80;
+
+$color-button-text: white;
+$color-button-background: #0c0c0c;
+
+$color-background: white;
+$color-border: rgb(241, 241, 241);
+
+$color-input-border: rgb(180, 180, 180);
+$color-input-border-focus: $color-accent;
+
+$color-almost-white: #fcfcfc;
+
+$site-background-color: $color-background;
+
+
+$site-max-width: 1100px;
+
+
+// Error
+$color-error: #d0011b;
+
+
 
 // Breakpoints
 $breakpoint-sml: 760px;

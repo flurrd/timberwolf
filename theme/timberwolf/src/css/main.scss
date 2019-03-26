@@ -8,13 +8,47 @@
 @import "_media.scss";
 @import "_utilities.scss";
 
-
+.logo-svg-el {
+	path {
+		fill: $color-logo-fill;
+	}
+}
 
 .site-max-width {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.page-rte {
+	max-width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;	
+	padding-bottom: 3rem;		
+	background: white;
+	margin-bottom: 3rem;
+
+	@media(min-width: 900px) {
+		padding: 0.4rem 4.1rem;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.102);
+		margin-top: -200px;
+		padding-bottom: 3rem;	
+	}
+}
+
+
+.page__header-image {
+    height: 34vmin;
+    background-image: url(/wp-content/uploads/2019/03/derek-torsani-224082-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
 
 .competition-category {
 	margin: 10px;
@@ -69,6 +103,14 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	margin-left: auto;
+	font-family: $font-label;
+	display: block;
+
+	@media(max-width: $mobile-nav-visible-max) {
+		display: none;
+	}
+
+
 
 	.top-menu-items {
 		width: 100%;
@@ -83,6 +125,7 @@ a:hover, a:active {
 	margin: 0;
 	padding-left: 0;
 	display: flex;
+	font-size: 16px;
 
 	a {
 		color: white;
@@ -102,15 +145,10 @@ a:hover, a:active {
 .menu-main-navigation-top-container  a {
 	display: block;
 	text-decoration: none;
-	font-weight: 700;
 	padding: 1.2rem 20px;
 
 }
 
-
-.main-navigation a:hover {
-
-}
 
 
 
@@ -160,7 +198,7 @@ a:hover, a:active {
 
 .site-header {
 	padding: 1rem;
-	background: #333F48;
+	background: $color-brand-primary;
 }
 
 
@@ -177,15 +215,223 @@ a:hover, a:active {
 	margin-right: 1rem;
 	min-width: 130px;
 
+	@media(max-width: $mobile-nav-visible-max) {
+		max-width: 130px;
+	}
+
+
 	svg {
 		width: 100%;
 	}
 }
 
 .site-footer {
-    background: #2e2426;
-    color: white;
+    background: $color-brand-primary;
+	color: white;
+	padding: 4rem 2rem;
     a {
         color: white;
     }
 }
+
+
+
+
+
+$push-menu-width: 280px;
+$push-menu-background-color: white;
+
+$push-menu-logo-fill-color: black;
+
+$push-menu-list-item-background-color: #fff;
+$push-menu-list-item-background-color--hover: #fafafa;
+$push-menu-list-item-link-color: black;
+$push-menu-list-item-border-color: #e3e3e3;
+$push-menu-header-background: #fafafa;
+
+
+.push-menu {
+    position: fixed;
+    top: 0;
+    width: $push-menu-width;
+    height: 100%;
+	left: -$push-menu-width;
+	background: $push-menu-background-color;
+	transition: left 0.2s $ease-out-cubic;
+	overflow-y: scroll;
+	z-index: 2000;
+	max-height: 100vh;
+	h5 {
+		font-size: 0.9rem;
+		color: $push-menu-list-item-link-color;
+		margin: 0;
+		font-family: $font-nav;
+		text-transform: uppercase;
+		padding: 0.9rem 1rem 0.5rem 1rem;
+	}
+
+}
+
+.layout-container {
+	left: 0;
+	transition: left 0.2s $ease-out-cubic;
+	min-width: 100%;
+	max-width: 100%;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+body.mobile-menu-open {
+	overflow-x: hidden;
+	//max-height: 100vh;
+	//-webkit-overflow-scrolling: touch;
+
+	.layout-container {
+		left: $push-menu-width;
+		overflow: hidden;
+		//max-height: 100vh;
+	}
+	.fixed-header {
+		left: $push-menu-width;
+	}
+    .push-menu-tint {
+		display: block;
+		left: $push-menu-width;
+		opacity: 1;
+		pointer-events: inherit;
+    }
+    .push-menu {
+		left: 0;
+	}
+
+	.main-nav-wrapper {
+		left: $push-menu-width;
+	}
+
+}
+.main-nav-wrapper {
+	left: 0;
+	transition: left 0.2s $ease-out-cubic;
+}
+
+.push-menu__header {
+	padding: 1rem;
+	//border-bottom: 1px solid black;
+	background: $push-menu-header-background;
+}
+
+.push-menu__header-brand-link {
+	display: flex;
+	height: 57px;
+	align-items: center;
+	svg {
+		width: 136px;
+		path {
+			fill: $push-menu-logo-fill-color;
+		}
+	}
+}
+
+
+.push-menu-tint {
+	position: fixed;
+	z-index: 100;
+    top: 0;
+	bottom: 0;
+	right:0;
+	width: 100%;
+	left: 0;
+    background: rgba(black, 0.4);
+	opacity: 0;
+	transition: all 0.2s $ease-out-cubic;
+	cursor: pointer;
+	pointer-events: none;
+}
+
+
+.hamburger {
+    position: relative;
+    padding: 1rem 1.5rem;
+	transition: margin-left 0.2 $ease-out-cubic;
+	display: none;
+	margin-left: auto;
+
+
+	cursor: pointer;
+	&:hover {
+		background: white;
+		.hamburger__line {
+			background-color: $color-brand-primary;
+		}
+
+	}
+
+	@media(max-width: 380px) {
+		padding: 1rem 1.1rem;
+	}
+
+	@media(max-width: $mobile-nav-visible-max) {
+		display: block;
+	}
+
+	
+}
+
+.hamburger__line {
+	width: 20px;
+	height: 3px;
+	background-color: #FFF;
+	display: block;
+	margin: 3px auto;
+}
+
+
+.push-menu-link-lists {
+
+
+	h2 {
+		font-size: 0.8rem;
+		padding: 0.7rem 1rem;
+		margin: 0;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		background: white;
+		font-family: $font-nav;
+	}
+
+	ul {
+		background: $push-menu-list-item-background-color;
+		padding: 0;
+		padding-top: 50px;
+		margin: 0;
+		list-style: none;
+		& + & {
+			margin-top: 1rem;
+		}
+	
+		li {
+			border-bottom: 1px solid $push-menu-list-item-border-color;
+			&:first-child {
+				border-top: 1px solid $push-menu-list-item-border-color;
+			}
+
+
+			a {
+				display: block;
+				padding: 0.5rem 1rem;
+				color: $push-menu-list-item-link-color;
+				font-family: $font-nav;
+				text-transform: uppercase;
+				font-size: 0.8rem;
+			}
+	
+		}
+	}
+	
+
+}
+
+
+
+

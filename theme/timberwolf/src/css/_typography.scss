@@ -1,147 +1,150 @@
 
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-	color: #131313;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
-	font-family: 'Domine', serif;
-}
-
-p {
-	margin-bottom: 1.5em;
-}
-
-dfn, cite, em, i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code, kbd, tt, var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-}
-
-abbr, acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-
-mark, ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-
-big {
-	font-size: 125%;
-}
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
 html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
+	font-family: $font-body;
+	font-size: 18px;
+	font-weight: 300;
+    line-height: 1.5;
 }
 
 body {
-	background: #fff;
-	font-family: 'Domine', serif;
-	/* Fallback for when there is no custom background color defined. */
+	color: $color-text;
+}
+
+
+em {
+	font-style: italic;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 40px;
+	margin-bottom: 32px;
+	font-family: $font-title;
+	font-weight: 700;
+	color: $color-text-title;
+}
+
+h1,h2,h3,h4 {
+	font-weight: 600;
 }
 
 
 
-nav {
-	font-family: 'Istok Web', sans-serif;
+h1 {
+font-weight: 600;
+font-size: 2rem;
 }
 
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+h2 {
+font-size: 1.4rem;
 }
 
-ul, ol {
-	margin: 0 0 1.5em 3em;
+h3 {
+	font-size: 1.2rem;
+font-family: $font-label;
+color: #5f5f5f;
+font-style: italic;
+font-weight: normal;
 }
 
-ul {
-	list-style: disc;
+h4 {
+	font-size: 20px;
 }
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+// Text
+
+
+p {
+	margin-top: 1.3rem;
+	margin-bottom: 1.3rem;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+
+// Links 
+a {
+color: $color-text-link;
+text-decoration: none;
+&:hover {
+	color: $color-text-link--hover;
+}
+}
+
+
+strong {
+font-weight: bold;
+}
+
+
 
 ol {
-	list-style: decimal;
+	padding-left: 1em;
 }
 
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+.header-border {
+padding-bottom: 7px;
+border-bottom: 1px solid $color-border;
 }
 
-dt {
+
+
+.sans-light {
+	font-weight: 400;
+}
+
+.sans-medium {
+font-weight: 600;
+}
+
+
+ol {
+counter-reset: section;                
+list-style-type: none;
+padding-left: 0;
+
+ol {
+	padding-left: 15px;
+}
+
+li{
+	margin-bottom: 10px;
+	&:first-child {
+		margin-top: 15px;
+	}
+	&:last-child {
+		margin-bottom: 30px;
+	}		
+}
+li::before {
 	font-weight: bold;
+	counter-increment: section;          
+	content: counters(section, ".") ". ";
+}	
 }
 
-dd {
-	margin: 0 1.5em 1.5em;
+
+.field--intro,.article-rte {
+	ul {
+		list-style: disc;
+		padding-left: 1.5rem;
+	}
 }
 
-img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
-}
 
-figure {
-	margin: 1em 0;
-	/* Extra wide images within figure tags don't overflow the content area. */
-}
-
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
-
-button {
-	font-family: 'Istok Web', sans-serif;
-}

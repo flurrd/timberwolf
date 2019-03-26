@@ -16,7 +16,9 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-max-width">
 
-			<h3>Footer</h3>
+
+
+			<p class="copyright text-center">© 2019 Sydney Timber &amp; Deck Renewals. | <a href="/privacy-policy/">Privacy Policy</a> | All rights reserved.</p>
 
 		</div>
 	
@@ -25,6 +27,23 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<aside class="push-menu">
+
+	<div class="push-menu-link-lists">
+	<?php
+		wp_nav_menu( array(
+			'theme_location' => 'push-menu',
+			'menu_id'        => 'mobile-menu',
+		) );
+		?>
+	</div>
+
+</aside>
+
+<div class="push-menu-tint">
+</div>
+
+
 
 </body>
 </html>

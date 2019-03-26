@@ -46,6 +46,7 @@ if ( ! function_exists( 'timberwolf_setup' ) ) :
 		register_nav_menus( array(
 			'main-menu' => esc_html__( 'Primary', 'timberwolf' ),
 			'main-menu-top' => esc_html__( 'Primary-Top', 'timberwolf' ),
+			'mobile-menu' => esc_html__( 'push-menu', 'timberwolf' ),
 		) );
 
 		/*

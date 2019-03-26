@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
-	<link href="https://fonts.googleapis.com/css?family=Domine:400,700|Istok+Web:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -53,8 +53,16 @@
 					'menu_id'        => 'primary-menu',
 				) );
 				?>
+
+
 				
 			</nav><!-- #site-navigation -->	
+
+				<div class="hamburger">
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+				</div>	
 
 
 	</div>
