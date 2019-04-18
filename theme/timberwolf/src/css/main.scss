@@ -15,11 +15,80 @@
 }
 
 .site-max-width {
-    max-width: 1300px;
+    
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+
+	@media screen and (min-width: 500px)  {
+		max-width: 95%;
+	}
+
+	@media screen and (min-width: 800px)  {
+		max-width: 95%;
+	}
+	@media screen and (min-width: 1200px)  {
+		max-width: 1200px;
+	}
+
+
 }
 
+
+
+.flex-grid__row {
+	margin-top: 6%;
+	margin-bottom: 6%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flex-grid__col {
+
+	display: flex;
+	flex: 1 0 100%;
+	justify-content: center;
+	text-align: center;
+
+	@media screen and (min-width: 350px) {
+		flex: 1 0 50%;
+	}
+
+	@media screen and (min-width: 850px) {
+		flex: 1 0 25%;
+	}
+
+}
+
+.feature-box__img {
+	width: 100%;
+	margin-bottom: 1rem;
+	background-size: cover;
+	height: 200px;
+}
+
+.feature-box {
+	margin: 0.6rem;
+	display: block;
+	width:100%;
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+
+	&:hover {
+		-webkit-filter: grayscale(0%);
+		filter: none;
+
+		.feature-box__link-txt {
+			color: $color-text-link--hover;
+		}
+	}
+}
+
+.feature-box__link-txt {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: .8rem;
+}
 
 .page-rte {
 	max-width: 850px;
@@ -117,6 +186,8 @@ a:hover, a:active {
 		display: block;
 		display: flex;
 		justify-content: flex-end;
+		margin-bottom: 1rem;
+
 	}
 }
 
@@ -128,7 +199,7 @@ a:hover, a:active {
 	font-size: 16px;
 
 	a {
-		color: white;
+		color: $main-nav-link-color;
 	}
 }
 
@@ -137,17 +208,25 @@ a:hover, a:active {
 	display: block;
     text-decoration: none;
 	padding: 0.8rem 1rem;
-	color: white;
+	color: $main-nav-link-color;
 	text-transform: uppercase;
+
+	font-weight: 600;
+    font-size: 14px;
 }
 
 
 .menu-main-navigation-top-container  a {
 	display: block;
 	text-decoration: none;
-	padding: 1.2rem 20px;
-
+	padding: 1rem 20px;
+	font-weight: 600;
+	font-size: 14px;
+    padding: 0.8rem 1rem;
+	background: rgb(36, 36, 36) !important;
+	color: white!important;
 }
+
 
 
 
@@ -197,8 +276,11 @@ a:hover, a:active {
 }
 
 .site-header {
-	padding: 1rem;
-	background: $color-brand-primary;
+	padding-top: 1.5rem;
+	padding-bottom: 1.3rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	background: $header-background;
 }
 
 
@@ -213,7 +295,7 @@ a:hover, a:active {
 .site-branding {
 	max-width: 180px;
 	margin-right: 1rem;
-	min-width: 130px;
+	min-width: 120px;
 
 	@media(max-width: $mobile-nav-visible-max) {
 		max-width: 130px;
@@ -360,7 +442,7 @@ body.mobile-menu-open {
 
 	cursor: pointer;
 	&:hover {
-		background: white;
+		
 		.hamburger__line {
 			background-color: $color-brand-primary;
 		}
@@ -381,7 +463,7 @@ body.mobile-menu-open {
 .hamburger__line {
 	width: 20px;
 	height: 3px;
-	background-color: #FFF;
+	background: $color-brand-primary;
 	display: block;
 	margin: 3px auto;
 }
@@ -428,10 +510,42 @@ body.mobile-menu-open {
 	
 		}
 	}
+}
+
+.about-flex-wrapper {
+	display: flex;
+	justify-content: center;
+	.about-content {
+		flex: 1;
+		max-width: 600px;
+		padding-left: 3rem;
+
+		h2 {
+			font-size: 1.6rem;
+		}
+	} 
+	.about-image {
+		flex: 1;
+		max-width: 450px;
+	} 	
+}
+
+.image-cropper {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+	border-radius: 50%;
+	img {
+		display: inline;
+		margin: 0 auto;
+		height: 100%;
+		width: auto;
+	}
+	
 	
 
 }
-
 
 
 

@@ -3,8 +3,8 @@ $color-text: #3d3d3d;
 $color-borders: #e3e3e3;
 
 
-
-
+$header-background: white;
+$main-nav-link-color: $color-text;
 
 $font-body:'Montserrat', sans-serif; 
 $font-title: $font-body;
@@ -14,18 +14,17 @@ $font-nav: $font-body;
 
 $site-max-width: 1300px;
 
-$mobile-nav-visible-max: 1085px;
+$mobile-nav-visible-max: 1050px;
 
 $ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 $ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
 // Main colors 
-$brand-pink: #F5CBB8;
-$color-accent: #a10071;
+$color-accent: #993f3f;
 
 
-$color-brand-primary: #2f3a49;
-$color-logo-fill: white;
+$color-brand-primary: #3d3d3d;
+$color-logo-fill: $color-brand-primary;
 
 $color-text: #231f20;
 $color-text-link: #a10071;
