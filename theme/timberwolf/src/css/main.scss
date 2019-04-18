@@ -18,6 +18,7 @@
     
     margin-left: auto;
 	margin-right: auto;
+	width: 100%;
 
 	@media screen and (min-width: 500px)  {
 		max-width: 95%;
@@ -26,18 +27,23 @@
 	@media screen and (min-width: 800px)  {
 		max-width: 95%;
 	}
-	@media screen and (min-width: 1200px)  {
-		max-width: 1200px;
+	@media screen and (min-width: 1000px)  {
+		max-width: 1100px;
 	}
 
 
 }
 
+.about-section{
+	background: #FAFAFA;
+}
 
 
 .flex-grid__row {
-	margin-top: 6%;
-	margin-bottom: 6%;
+	padding: 1.5rem 1rem;
+	@media screen and (min-width: 1000px) {
+		padding: 2rem 1rem;
+	}
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -87,7 +93,7 @@
 .feature-box__link-txt {
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: .8rem;
+	font-size: 0.9rem;
 }
 
 .page-rte {
@@ -102,15 +108,15 @@
 
 	@media(min-width: 900px) {
 		padding: 0.4rem 4.1rem;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.102);
-		margin-top: -200px;
+		//box-shadow: 0 0 10px rgba(0, 0, 0, 0.102);
+		//margin-top: -200px;
 		padding-bottom: 3rem;	
 	}
 }
 
 
 .page__header-image {
-    height: 34vmin;
+    height: 20vmin;
     background-image: url(/wp-content/uploads/2019/03/derek-torsani-224082-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -210,9 +216,10 @@ a:hover, a:active {
 	padding: 0.8rem 1rem;
 	color: $main-nav-link-color;
 	text-transform: uppercase;
-
+    padding-bottom: 0;
 	font-weight: 600;
-    font-size: 14px;
+	font-size: 14px;
+	
 }
 
 
@@ -222,9 +229,11 @@ a:hover, a:active {
 	padding: 1rem 20px;
 	font-weight: 600;
 	font-size: 14px;
-    padding: 0.8rem 1rem;
-	background: rgb(36, 36, 36) !important;
-	color: white!important;
+    padding: 0.7rem 0.8rem;
+    background: #ffffff !important;
+    color: #2b2b2b !important;
+    border: 2px solid #2b2b2b;
+    border-radius: 24px;
 }
 
 
@@ -277,7 +286,7 @@ a:hover, a:active {
 
 .site-header {
 	padding-top: 1.5rem;
-	padding-bottom: 1.3rem;
+	padding-bottom: 1.5rem;
 	padding-right: 1rem;
 	padding-left: 1rem;
 	background: $header-background;
@@ -301,6 +310,10 @@ a:hover, a:active {
 		max-width: 130px;
 	}
 
+	@media(min-width: 1350px) {
+		max-width: 210px;
+	}
+
 
 	svg {
 		width: 100%;
@@ -320,7 +333,7 @@ a:hover, a:active {
 
 
 
-$push-menu-width: 280px;
+$push-menu-width: 290px;
 $push-menu-background-color: white;
 
 $push-menu-logo-fill-color: black;
@@ -515,24 +528,43 @@ body.mobile-menu-open {
 .about-flex-wrapper {
 	display: flex;
 	justify-content: center;
+	padding: 1rem 0;
+
+	@media screen and (max-width: 800px ) {
+		display: block;
+		text-align: center;
+	}
+
 	.about-content {
 		flex: 1;
-		max-width: 600px;
+		max-width: 650px;
 		padding-left: 3rem;
 
 		h2 {
 			font-size: 1.6rem;
 		}
+		ul {
+			list-style: none;
+		}
 	} 
 	.about-image {
-		flex: 1;
-		max-width: 450px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	} 	
 }
 
 .image-cropper {
-    width: 400px;
-    height: 400px;
+    width: 280px;
+	height: 280px;
+	//-webkit-filter: grayscale(100%);
+	//filter: gray;
+
+	
+	@media screen and (max-width: 950px) {
+		width: 250px;
+		height: 250px;
+	}
     position: relative;
     overflow: hidden;
 	border-radius: 50%;
@@ -549,3 +581,21 @@ body.mobile-menu-open {
 
 
 
+.n2-ss-item-content {
+	font-family: $font-label !important;
+	font-weight: 100 !important;
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

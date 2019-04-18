@@ -1,9 +1,10 @@
 $root-font-size: 16px;
-$color-text: #3d3d3d;
+$color-text: #4c4434;
 $color-borders: #e3e3e3;
 
+$site-white-color: #fff;
 
-$header-background: white;
+$header-background: $site-white-color;
 $main-nav-link-color: $color-text;
 
 $font-body:'Montserrat', sans-serif; 
@@ -12,7 +13,7 @@ $font-title: $font-body;
 $font-label: $font-body;
 $font-nav: $font-body;
 
-$site-max-width: 1300px;
+$site-max-width: 1000px;
 
 $mobile-nav-visible-max: 1050px;
 
@@ -23,12 +24,13 @@ $ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 $color-accent: #993f3f;
 
 
-$color-brand-primary: #3d3d3d;
+$color-brand-primary: #1f1f1f;
+$color-brand-black: #1f1f1f;
 $color-logo-fill: $color-brand-primary;
 
 $color-text: #231f20;
-$color-text-link: #a10071;
-$color-text-link--hover: #66094a;
+$color-text-link: #231f20;
+$color-text-link--hover: #e66108;
 $color-text-title: #0c0c0c;
 $rootFontsize: 18px;
 
