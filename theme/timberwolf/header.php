@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header">
 
-	<div class="site-header-flex-container site-max-width">
+	<div class="site-header-flex-container alternate">
 
 		<div class="site-branding">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -36,16 +36,8 @@
 				</a>	
 			</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation">
+			<nav id="site-navigation" class="hover-nav nav02">
 
-				<div class="top-menu-items text-right clearfix">
-					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'main-menu-top',
-						'menu_id'        => 'primary-menu-top',
-					) );
-					?>
-				</div>
 
 				<?php
 				wp_nav_menu( array(
@@ -57,14 +49,14 @@
 
 				
 			</nav><!-- #site-navigation -->	
-
+			<div class="hamburger-pos-wrapper">
 				<div class="hamburger">
-					<span class="hamburger__line"></span>
-					<span class="hamburger__line"></span>
-					<span class="hamburger__line"></span>
+						<span class="hamburger__line"></span>
+						<span class="hamburger__line"></span>
+						<span class="hamburger__line"></span>
 				</div>	
 
-
+			</div>		
 	</div>
 
 

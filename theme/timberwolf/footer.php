@@ -31,11 +31,11 @@
 
 	<div class="push-menu-link-lists">
 	<?php
-		wp_nav_menu( array(
-			'theme_location' => 'push-menu',
-			'menu_id'        => 'mobile-menu',
-		) );
-		?>
+				wp_nav_menu( array(
+					'theme_location' => 'main-menu',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
 	</div>
 
 </aside>
