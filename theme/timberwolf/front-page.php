@@ -18,25 +18,25 @@ get_header();
 		<section>
 			<div class="flex-grid__row">
 				<div class="flex-grid__col">
-					<a class="feature-box"  href="/">
+					<a class="feature-box"  href="/pre-coating/">
 						<div class="feature-box__img" style="background-image: url('https://www.cutek.com.au/wp-content/uploads/2017/11/AERO90X18-HSKPT2-10-1.jpg')"></div>
 						<span class="feature-box__link-txt">Pre-Coating</span>
 					</a>
 				</div>
 				<div class="flex-grid__col">
-					<a class="feature-box"  href="/">
+					<a class="feature-box"  href="/restoration-maintenance/">
 						<div class="feature-box__img" style="background-image: urL('/wp-content/uploads/2019/04/SLIDER_Manufacturers-C_Stacks2.jpg')"></div>
 						<span class="feature-box__link-txt">Restoration & Maintenance</span>
 					</a>
 				</div>
 				<div class="flex-grid__col">
-					<a class="feature-box"  href="/">
+					<a class="feature-box"  href="/our-work/">
 						<div class="feature-box__img" style="background-image: urL('https://sydneytimbersolutions.com.au/wp-content/uploads/2019/03/adrien-olichon-1240768-unsplash.jpg')"></div>
 						<span class="feature-box__link-txt">Our Work</span>
 					</a>
 				</div>		
 				<div class="flex-grid__col">
-					<a class="feature-box"  href="/">
+					<a class="feature-box"  href="/contact/">
 						<div class="feature-box__img" style="background-image: urL('/wp-content/uploads/2019/04/Background222.jpg')"></div>
 						<span class="feature-box__link-txt">Contact</span>
 					</a>

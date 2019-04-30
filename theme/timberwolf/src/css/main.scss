@@ -15,6 +15,7 @@
 }
 
 
+
 .site-max-width {
     
     margin-left: auto;
@@ -120,7 +121,7 @@
 
 .page__header-image {
     height: 20vmin;
-    background-image: url(/wp-content/uploads/2019/03/derek-torsani-224082-unsplash.jpg);
+    background-image: url(/wp-content/uploads/2019/04/derek-torsani-224082-unsplash-1-e1556521055377.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -502,6 +503,7 @@ body.mobile-menu-open {
 
 .push-menu-link-lists {
 
+	padding-top: 2rem;
 
 	h2 {
 		font-size: 0.8rem;
@@ -513,10 +515,10 @@ body.mobile-menu-open {
 		font-family: $font-nav;
 	}
 
+
 	ul {
 		background: $push-menu-list-item-background-color;
 		padding: 0;
-		padding-top: 50px;
 		margin: 0;
 		list-style: none;
 		& + & {
@@ -768,6 +770,8 @@ body.mobile-menu-open {
 
 }
 
+
+
 .contact-form-section {
 	input {
 		width: 100%;
@@ -799,3 +803,113 @@ body.mobile-menu-open {
 	flex:1;
 }
 
+
+.site-footer {
+	h4 {
+		margin: 0;
+		color: white;
+		font-size: 14px;
+		font-weight: 100;
+	}
+}
+
+
+.footer__info {
+	margin-bottom: 1rem;
+}
+
+
+.footer-nav .menu {
+	list-style: none !important;
+	display: flex !important;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-top: 3rem;
+
+
+	li {
+		margin: 0.5rem;
+		&:first-child {
+			margin-left: 0;
+		}
+		a {
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 14px;
+			white-space: nowrap;
+		}
+	}
+}
+
+.footer-card-wrap {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media screen and (min-width: 760px) {
+		display: flex;
+		flex-direction: row;
+		background: #3b3b3b;
+		align-items: stretch;
+
+	}
+	
+	@media screen and (max-width: 500px) {
+		font-size: 80%;
+	}
+
+	.footer__logo {
+		background: #fff;
+		flex: 1;
+		padding: 2.5rem 2rem;
+		display: flex;
+		justify-content: center;
+		@media screen and (max-width: 759px) {
+			width: 100%;
+		}
+	}
+
+
+	.footer__info {
+		background: #3b3b3b;
+		flex: 2;
+		padding: 3rem 2rem;
+		@media screen and (max-width: 759px) {
+			width: 100%;
+			max-width: 100%;
+			margin-top: 1rem;
+			flex: 1;
+		}
+
+	}
+}
+
+footer {
+
+	.logo-svg-el {
+		max-width: 250px;
+		width: 100%;
+		min-width: 100px;
+	}
+	.logo-svg-el path {
+		fill: #3d3d3d;
+	}
+
+}
+
+
+
+.footer-layout-wrap {
+
+	.footer__brand {
+
+	}
+
+
+
+	.footer__menu {
+
+	}
+}

@@ -16,9 +16,42 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-max-width">
 
+			<div class="footer-card-wrap">
+				<div class="footer__logo">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<?php
+								include('template-parts/logo-svg.php');?>
+
+					</a>	
+				</div>
 
 
-			<p class="copyright text-center">© 2019 Sydney Timber &amp; Deck Renewals. | <a href="/privacy-policy/">Privacy Policy</a> | All rights reserved.</p>
+
+				<div class="footer__info">
+					<p>
+					<strong class="uppercase">Sydney Timber Solutions</strong><br>
+					Unit 6, 25a Powers Road,<br>
+					Seven Hills, NSW, 2147
+					</p>
+					<p>
+					m: 0405 519 109<br>
+					e: info@sydneytimbersolutions.com.au
+					</p>					
+				</div>
+			</div>
+
+			<div class="footer-nav">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu',
+						'menu_id'        => 'footer-nav',
+					) );
+					?>				
+			</div>
+
+
+
+			<small class="copyright mar-t-3 d-block text-center">© 2019 Sydney Timber Solutions | <a href="/privacy-policy/">Privacy Policy</a> | All rights reserved.</small>
 
 		</div>
 	
@@ -30,10 +63,11 @@
 <aside class="push-menu">
 
 	<div class="push-menu-link-lists">
+
 	<?php
 				wp_nav_menu( array(
-					'theme_location' => 'main-menu',
-					'menu_id'        => 'primary-menu',
+					'theme_location' => 'mobile-menu',
+					'menu_id'        => 'push-menu',
 				) );
 				?>
 	</div>

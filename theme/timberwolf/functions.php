@@ -47,6 +47,7 @@ if ( ! function_exists( 'timberwolf_setup' ) ) :
 			'main-menu' => esc_html__( 'Primary', 'timberwolf' ),
 			'main-menu-top' => esc_html__( 'Primary-Top', 'timberwolf' ),
 			'mobile-menu' => esc_html__( 'push-menu', 'timberwolf' ),
+			'footer-menu' => esc_html__( 'footer-nav', 'timberwolf' ),			
 		) );
 
 		/*
