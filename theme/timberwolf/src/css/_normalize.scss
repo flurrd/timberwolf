@@ -396,3 +396,7 @@ template {
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
+
+img {
+	max-width: 100%;
+}
