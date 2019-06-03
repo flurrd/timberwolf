@@ -22,7 +22,7 @@ get_header();
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
                 ?>
-                <h3>Category Default Template</h3>
+                <small>Category Default Template</small>
             </header><!-- .page-header -->
             
             <div class="d-flex flex-wrap">

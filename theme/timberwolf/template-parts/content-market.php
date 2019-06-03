@@ -22,7 +22,10 @@
             <div class="service-rte">
 
                 <header class="entry-header">
-                    <?php timberwolf_post_thumbnail(); ?>
+
+                    <?php timberwolf_post_thumbnail(); ?>    
+
+                    <small>content market</small>
                     <?php
 						the_title( '<h4 class="entry-title">', '</h4>' );
                     ?>

@@ -1264,6 +1264,9 @@ body.mobile-menu-open {
   .nav02 ul li:hover > ul li a {
     border-top: 1px solid #e3e3e3; }
 
+div.wpcf7 {
+  width: 90%; }
+
 .wpcf7-form {
   padding: 1rem; }
   .wpcf7-form label {
@@ -1284,7 +1287,6 @@ body.mobile-menu-open {
 @media screen and (min-width: 900px) {
   .contact-form-section {
     display: flex;
-    justify-content: center;
     flex: 1; } }
 
 .wpcf7-form-control-wrap {
@@ -1327,29 +1329,33 @@ body.mobile-menu-open {
 .footer-card-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; }
   @media screen and (min-width: 760px) {
     .footer-card-wrap {
       display: flex;
       flex-direction: row;
-      background: #3b3b3b;
-      align-items: stretch; } }
+      align-items: stretch;
+      max-width: 800px; } }
   @media screen and (max-width: 500px) {
     .footer-card-wrap {
       font-size: 80%; } }
   .footer-card-wrap .footer__logo {
-    background: #fff;
+    background: #252525;
     flex: 1;
-    padding: 2.5rem 2rem;
+    padding: 3rem 2rem;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     @media screen and (max-width: 759px) {
       .footer-card-wrap .footer__logo {
         width: 100%; } }
   .footer-card-wrap .footer__info {
     background: #3b3b3b;
     flex: 2;
-    padding: 3rem 2rem; }
+    padding: 5rem 2rem;
+    margin: 0; }
     @media screen and (max-width: 759px) {
       .footer-card-wrap .footer__info {
         width: 100%;
@@ -1358,10 +1364,17 @@ body.mobile-menu-open {
         flex: 1; } }
 
 footer .logo-svg-el {
-  max-width: 250px;
+  max-width: 220px;
   width: 100%;
   min-width: 100px; }
 
 footer .logo-svg-el path {
-  fill: #3d3d3d; }
+  fill: #ffffff; }
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact-header h1 {
+    color: white; }
 
