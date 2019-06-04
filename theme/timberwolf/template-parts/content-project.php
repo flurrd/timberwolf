@@ -10,24 +10,35 @@
 ?>
 
 
-<article class="project-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header">
-    <a href="<?php echo get_permalink(); ?>">    <?php
-                the_title( '<h1 class="entry-title">', '</h2>' );
-            ?>
-        </a>   
-        <?php the_excerpt() ?>
-    
-    </header><!-- .entry-header -->
-    <div class="d-flex mar-t-3">
-        <div class="project-img">
-            <?php timberwolf_post_thumbnail(); ?>  
-            <a class="btn project-btn" href="<?php echo get_permalink(); ?>">View Project</a>              
-        </div>
-    </div>
-   
-    
-</article>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-<!-- #post-<?php the_ID(); ?> -->
+
+	<div class="entry-content site-max-width">
+
+		<section class="page-rte">
+
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+
+
+			<?php
+			the_content();
+
+			wp_link_pages( array(
+				'before' => '<div class="page-links site-max-width d-flex">' . esc_html__( 'Pages:', 'timberwolf' ),
+				'after'  => '</div>',
+			) );
+			?>
+
+		</section>
+
+	</div><!-- .entry-content -->
+
+
+
+
+</article><!-- #post-<?php the_ID(); ?> -->
+
