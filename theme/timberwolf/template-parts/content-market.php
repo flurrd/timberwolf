@@ -10,36 +10,35 @@
 ?>
 
 
-<article class="service-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<!--         <div class="service-item__cover-wrap">
-            <div class="service-cover">
-                
-            </div>
-        </div> -->
+<article id="content-market post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <div class="service-item__content-wrap">
-            <div class="service-rte">
 
-                <header class="entry-header">
 
-                    <?php timberwolf_post_thumbnail(); ?>    
+	<div class="entry-content site-max-width">
 
-                    <small>content market</small>
-                    <?php
-						the_title( '<h4 class="entry-title">', '</h4>' );
-                    ?>
-                    <?php the_excerpt() ?>
-                    
-                    
-                    <a class="btn" href="<?php echo get_permalink(); ?>"> Read More...</a>
-                </header><!-- .entry-header -->
+		<section class="page-rte">
 
-                <footer class="entry-footer mar-t-1">
-                    <?php timberwolf_entry_footer(); ?>
-                </footer><!-- .entry-footer -->
-            </div>
- 
-        </div>
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+
+
+			<?php
+			the_content();
+
+			wp_link_pages( array(
+				'before' => '<div class="page-links site-max-width d-flex">' . esc_html__( 'Pages:', 'timberwolf' ),
+				'after'  => '</div>',
+			) );
+			?>
+
+		</section>
+
+	</div><!-- .entry-content -->
+
+
+
 
 </article><!-- #post-<?php the_ID(); ?> -->
+

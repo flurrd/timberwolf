@@ -11,7 +11,7 @@
 
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="content-project post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
 

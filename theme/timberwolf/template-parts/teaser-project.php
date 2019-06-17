@@ -6,11 +6,10 @@
  *
  * @package timberwolf
  */
-
 ?>
 
 
-<article class="project-archive-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="project-archive-item teaser-project" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
     <a href="<?php echo get_permalink(); ?>">    <?php
                 the_title( '<h1 class="entry-title">Project | ', '</h2>' );

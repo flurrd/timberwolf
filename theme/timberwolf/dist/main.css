@@ -818,12 +818,26 @@ object {
       padding-bottom: 3rem; } }
 
 .page__header-image {
-  height: 20vmin;
   background-image: url(/wp-content/uploads/2019/04/derek-torsani-224082-unsplash-1-e1556521055377.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+  .page__header-image h1 {
+    margin: 0;
+    color: white; }
+  .page__header-image h2 {
+    margin: 0;
+    color: white; }
 
 .competition-category {
   margin: 10px; }
@@ -1454,4 +1468,17 @@ footer .logo-svg-el path {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
+
+.markets-list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.teaser-market {
+  flex: 1 0 33.3333%;
+  display: flex; }
+
+.teaser-market__link-wrap {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.6); }
 
