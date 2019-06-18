@@ -19,33 +19,32 @@
 
 
 	<?php timberwolf_post_thumbnail(); ?>
-	<div class="entry-content site-max-width contact-flex-row">
+	<div class="entry-content site-max-width ">
 
-
-		<section class=" contact-form-section">
-
-
-			<?php echo do_shortcode('[contact-form-7 id="128" title="Contact form 1"]'); ?>
-
-
-
-
-
-        </section>
         
-        <section class="padd-t-3 contact-rte">
+        <section class="padd-t-3 rte page-rte">
 				<?php
 			the_content();
+			?>    
+					<a href="https://www.cutek.com.au/what-is-the-cutek-difference/" class="btn btn--primary">Learn more about 'The Cutek Difference'</a>
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'timberwolf' ),
-				'after'  => '</div>',
-			) );
-			?>         
+					<section class="site-max-width video-section mar-b-3 mar-t-3">
+			<div class="resp-container">
+				<iframe class="resp-iframe" src="https://www.youtube.com/embed/JK0ENtp5__k" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+			</div>		
+	</section>
+
 
         </section>
 
+			
+	
 	</div><!-- .entry-content -->
+
+
+
+		
+
 
 
 

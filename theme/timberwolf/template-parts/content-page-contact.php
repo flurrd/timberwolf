@@ -9,10 +9,10 @@
 
 ?>
 
-<section>
+<section>s
   <header class="page__header-image">
-	<h1 class="entry-title">Pre-Coating</h1>
-	<h3>Sydney Timber Solutions Are Pre-Coating Specialists</h3>
+	<h1 class="entry-title">Get In Touch</h1>
+	<h2>Sydney Timber Solutions Are Pre-Coating Specialists</h2>
   </header>
 <section>
 

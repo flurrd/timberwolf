@@ -23,14 +23,7 @@
 
 
 		<section class=" contact-form-section">
-
-
-			<?php echo do_shortcode('[contact-form-7 id="128" title="Contact form 1"]'); ?>
-
-
-
-
-
+			<img class="mar-t-3 padd-t-3 mar-b-3 mar-l-auto mar-r-auto"src="https://sydneytimbersolutions.com.au/wp-content/uploads/2019/06/kyle-glenn-602592-unsplash.jpg" alt="">
         </section>
         
         <section class="padd-t-3 contact-rte">

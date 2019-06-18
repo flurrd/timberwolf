@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header">
 
-	<div class="site-header-flex-container alternate">
+	<div class="site-header-flex-container">
 
 		<div class="site-branding">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
