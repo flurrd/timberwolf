@@ -17,7 +17,7 @@
 
 	<div class="entry-content site-max-width">
 
-		<section class="page-rte">
+		<section class="page-rte project-rte">
 
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

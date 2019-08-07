@@ -11,8 +11,7 @@
 
 <section>
   <header class="page__header-image">
-	<h1 class="entry-title">Pre-Coating</h1>
-	<h2>Sydney Timber Solutions Are Pre-Coating Specialists</h2>
+	<h1 class="entry-title page-feature-title site-max-width">Pre-Coating</h1>
   </header>
 <section>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -28,11 +27,11 @@
 			?>    
 					<a href="https://www.cutek.com.au/what-is-the-cutek-difference/" class="btn btn--primary">Learn more about 'The Cutek Difference'</a>
 
-					<section class="site-max-width video-section mar-b-3 mar-t-3">
+<!-- 					<section class="site-max-width video-section mar-b-3 mar-t-3">
 			<div class="resp-container">
 				<iframe class="resp-iframe" src="https://www.youtube.com/embed/JK0ENtp5__k" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
 			</div>		
-	</section>
+	</section> -->
 
 
         </section>

@@ -9,13 +9,17 @@
 get_header();
 ?>
 
-<section class="mar-b-3">
+<!-- <section class="mar-b-3">
   <header class="page__header-image contact-header">
 	<h1>Recent Projects</h1>
 	<h2>Pre-coating ensures timber is protected from day one and beyond</h2>
   </header>
-</section>
-
+</section> -->
+<section>
+  <header class="page__header-image">
+	<h1 class="entry-title page-feature-title site-max-width">Recent Projects</h1>
+  </header>
+<section>
 
 <div id="primary" class="content-area site-max-width">
 	<main id="main" class="site-main category-projects">

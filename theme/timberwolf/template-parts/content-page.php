@@ -8,11 +8,11 @@
  */
 
 ?>
-
+<!-- 
 <section>
   <header class="page__header-image">
   </header>
-<section>
+<section> -->
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

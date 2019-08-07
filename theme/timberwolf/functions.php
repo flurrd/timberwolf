@@ -133,6 +133,8 @@ function timberwolf_scripts() {
   wp_register_script( 'timberwolf-main', get_template_directory_uri() . '/dist/main.js', array(), date("H:i:s"), true );
 	wp_enqueue_script('timberwolf-main');
 
+  	wp_register_script( 'font-awesome', 'https://kit.fontawesome.com/595162865f.js', null, null, true );
+	wp_enqueue_script('font-awesome');
 	wp_enqueue_style( 'timberwolf-main-style', get_template_directory_uri() . '/dist/main.css', array(), date("H:i:s"));
 
 	//Register template specific scripts
@@ -171,6 +173,8 @@ function namespace_add_custom_types( $query ) {
   }
 
 add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+
+
 
 function my_cptui_add_post_types_to_archives( $query ) {
 	// We do not want unintended consequences.

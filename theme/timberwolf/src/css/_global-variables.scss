@@ -2,10 +2,20 @@ $root-font-size: 16px;
 $color-text: #4c4434;
 $color-borders: #e3e3e3;
 
+$color-brand-primary: #3e4555;
+$color-brand-black: #1f1f1f;
+
 $site-white-color: #fff;
 
+
+
 $header-background: $site-white-color;
-$main-nav-link-color: $color-text;
+$main-nav-link-color: white;
+$main-nav-background-color: #3e4555;
+$color-logo-fill: $color-brand-primary;
+
+
+
 
 $font-body:'Montserrat', sans-serif; 
 $font-title: $font-body;
@@ -15,7 +25,7 @@ $font-nav: $font-body;
 
 $site-max-width: 1000px;
 
-$mobile-nav-visible-max: 955px;
+$mobile-nav-visible-max: 1070px;
 
 $ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 $ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -24,20 +34,17 @@ $ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 $color-accent: #993f3f;
 
 
-$color-brand-primary: #1f1f1f;
-$color-brand-black: #1f1f1f;
-$color-logo-fill: $color-brand-primary;
 
 $color-text: #231f20;
-$color-text-link: #e66108;
-$color-text-link--hover: #e66108;
+$color-text-link: $color-brand-primary;
+$color-text-link--hover: $color-brand-primary;
 $color-text-title: #0c0c0c;
 $rootFontsize: 18px;
 
 $color-text-light: #7b7b80;
 
 $color-button-text: white;
-$color-button-background: #0c0c0c;
+$color-button-background: $color-brand-primary;
 
 $color-background: white;
 $color-border: rgb(241, 241, 241);
@@ -50,7 +57,7 @@ $color-almost-white: #fcfcfc;
 $site-background-color: $color-background;
 
 
-$site-max-width: 1100px;
+$site-max-width: 1200px;
 
 
 // Error

@@ -9,7 +9,7 @@ input[type="submit"] {
 	border: none;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
-	background: #000;
+	background: $color-button-background;
 	color: white;
 	font-size: 1rem;
 	line-height: 1;
@@ -17,6 +17,12 @@ input[type="submit"] {
 	text-transform: uppercase;
 	padding: 1rem 1.2em;
 	cursor: pointer;
+
+	&:hover {
+		background: darken($color-button-background, 10%);
+		border-color: $color-button-background;
+		
+	}
 }
 
 
@@ -76,7 +82,12 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
 	color: #111;
+	outline: none;
+	border: 2px solid $color-button-background;
 }
+
+
+
 
 select {
 
@@ -84,4 +95,9 @@ select {
 	border-radius: 3px;
 	padding: 1rem 1.3rem;	
 	font-size: 1rem;
+
+	&:focus {
+		outline: none;
+	border: 2px solid $color-button-background;
+	}
 }

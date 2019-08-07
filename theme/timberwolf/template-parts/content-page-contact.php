@@ -9,10 +9,9 @@
 
 ?>
 
-<section>s
+<section>
   <header class="page__header-image">
-	<h1 class="entry-title">Get In Touch</h1>
-	<h2>Sydney Timber Solutions Are Pre-Coating Specialists</h2>
+	<h1 class="entry-title page-feature-title site-max-width">Contact Us</h1>
   </header>
 <section>
 

@@ -1,10 +1,16 @@
 
 .btn {
-	background: rgb(116, 116, 116);
+	background: $color-button-background;
 	color: white !important;
 	padding: 10px 13px;
 	border: none;
 	text-decoration: none;
 	display: inline-block;
 	margin: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+
+	&:hover {
+		background: darken($color-button-background, 10%);
+	}
 }

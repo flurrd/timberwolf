@@ -23,7 +23,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 </div>
     
     <a class="teaser-market__link-wrap" href="<?php echo get_permalink(); ?>">    
-        <?php the_title( '<h1 class="entry-title">', '</h2>' );?>  
+        <?php the_title( '<h2 class="entry-title">', '</h2>' );?>  
         <?php the_excerpt() ?>
     </a>  
 

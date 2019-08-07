@@ -11,8 +11,7 @@
 
 <section>
   <header class="page__header-image">
-	<h1 class="entry-title">Restoration & Maintenance</h1>
-	<h2>We are experts in rejuvenating any external timber surface</h2>
+	<h1 class="entry-title page-feature-title site-max-width">Restoration + Maintenance</h1>
   </header>
 <section>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -21,12 +20,8 @@
 	<?php timberwolf_post_thumbnail(); ?>
 	<div class="entry-content site-max-width contact-flex-row">
 
-
-		<section class=" contact-form-section">
-			<img class="mar-t-3 padd-t-3 mar-b-3 mar-l-auto mar-r-auto"src="https://sydneytimbersolutions.com.au/wp-content/uploads/2019/06/kyle-glenn-602592-unsplash.jpg" alt="">
-        </section>
         
-        <section class="padd-t-3 contact-rte">
+        <section class="padd-t-3 padd-b-3 mar-b-3 contact-rte page-rte">
 				<?php
 			the_content();
 

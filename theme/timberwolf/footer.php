@@ -25,19 +25,6 @@
 					</a>	
 				</div>
 
-
-
-				<div class="footer__info">
-					<p>
-					<strong class="uppercase">Sydney Timber Solutions</strong><br>
-					Unit 6, 25a Powers Road,<br>
-					Seven Hills, NSW, 2147
-					</p>
-					<p>
-					m: 0405 519 109<br>
-					e: info@sydneytimbersolutions.com.au
-					</p>					
-				</div>
 			</div>
 
 			<div class="footer-nav">
@@ -51,7 +38,7 @@
 
 
 
-			<small class="copyright mar-t-3 d-block text-center">© 2019 Sydney Timber Solutions | <a href="/privacy-policy/">Privacy Policy</a> | All rights reserved.</small>
+			<small class="copyright mar-t-1 d-block text-center">© 2019 Sydney Timber Solutions | <a href="/privacy-policy/">Privacy Policy</a> | All rights reserved.</small>
 
 		</div>
 	
