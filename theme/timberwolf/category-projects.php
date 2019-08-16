@@ -15,14 +15,26 @@ get_header();
 	<h2>Pre-coating ensures timber is protected from day one and beyond</h2>
   </header>
 </section> -->
-<section>
-  <header class="page__header-image">
-	<h1 class="entry-title page-feature-title site-max-width">Recent Projects</h1>
-  </header>
-<section>
+<div class="landing-hero-wrapper">
+    <div class="landing-hero">
+        <div class="landing-hero-image-wrapper" data-parallax="yes">
+            <div class="landing-hero-image-wrapper" data-start="transform: translateY(0px);"
+                data-1440="transform: translateY(-500px);">
+                <div class="landing-hero-content">
+                    <h2 data-0=" opacity: 1; top: 50%;" data-300="opacity: 0; top: 10%;">RECENT PROJECTS</h2>
+                    <div class="image">
+                        <img src="https://sydneytimbersolutions.com.au/wp-content/uploads/2019/08/STS-HOME-PAGE-HERO-IMAGE-iStock-629074900.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div id="primary" class="content-area site-max-width">
-	<main id="main" class="site-main category-projects">
+	<main id="main" class="site-main category-projects padd-l-1 padd-r-1">
 		<?php if (have_posts() ) : ?>
 		<div class="project-list">
 				<?php

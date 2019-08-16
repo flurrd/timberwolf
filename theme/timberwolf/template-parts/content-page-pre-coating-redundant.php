@@ -9,11 +9,8 @@
 
 ?>
 
-<section>
-  <header class="page__header-image">
-	<h1 class="entry-title page-feature-title site-max-width">Pre-Coating</h1>
-  </header>
-<section>
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 

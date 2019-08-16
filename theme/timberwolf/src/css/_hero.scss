@@ -65,6 +65,28 @@
 	}
 }
 
+
+
+.landing-hero-wrapper.not-landing {
+
+	.landing-hero {
+
+		height: 50vh !important;
+		min-height: 400px;
+
+		.landing-hero-image-wrapper {
+
+
+			.landing-hero-content {
+				height: 50vh !important;
+				min-height: 400px;
+
+			}
+		}
+	}
+}
+
+
 .site-content {
 	min-height: 80vh;
 }

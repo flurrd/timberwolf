@@ -36,10 +36,24 @@ get_header();
 </div>
 
 
+
 <div id="primary" class="content-area">
     <main id="main" class="site-main site-max-width padd-b-3 padd-t-3">
 
-        <section>
+        <section class="landing-content-hero">
+            <div class="landing-content-hero__col landing-content-hero__col--text">
+                <div class="landing-content-hero__rte">
+                <h2>Protect timber before it's installed with our pre-coating service.</h2>
+                <p>Pre-coating timber means all sides of your timber are coated and protected before being installed.</p>
+                <a class="btn btn--default" href="/pre-coating/">Find out more</a>
+                </div>
+            </div>
+            <div class="landing-content-hero__col landing-content-hero__col--img">
+                <img class="landing-content-hero__img" src="https://sydneytimbersolutions.com.au/wp-content/uploads/2019/08/precoat.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="landing-content-box-links">
             <div class="flex-grid__row">
                 <div class="flex-grid__col">
                     <a class="feature-box" href="/pre-coating/">

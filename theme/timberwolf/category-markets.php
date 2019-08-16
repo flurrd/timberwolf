@@ -10,11 +10,29 @@ get_header();
 ?>
 
 
+<div class="landing-hero-wrapper">
+    <div class="landing-hero">
+        <div class="landing-hero-image-wrapper" data-parallax="yes">
+            <div class="landing-hero-image-wrapper" data-start="transform: translateY(0px);"
+                data-1440="transform: translateY(-500px);">
+                <div class="landing-hero-content">
+                    <h2 data-0=" opacity: 1; top: 50%;" data-300="opacity: 0; top: 10%;">Who We Work With</h2>
+                    <div class="image">
+                        <img src="https://sydneytimbersolutions.com.au/wp-content/uploads/2019/08/STS-HOME-PAGE-HERO-IMAGE-iStock-629074900.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div id="primary" class="content-area mar-b-3">
 
 	<main id="main" class="site-main site-max-width category-markets">
-	<h1 class="text-center mar-b-3">Who We Work With</h1>
+
 		<?php if (have_posts() ) : ?>
 		<div class="markets-list">
 				<?php
