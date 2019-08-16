@@ -7,14 +7,14 @@
 @import "_buttons.scss";
 @import "_media.scss";
 @import "_utilities.scss";
+@import "_hero.scss";
+
 
 .logo-svg-el {
 	path {
 		fill: $color-logo-fill;
 	}
 }
-
-
 
 .site-max-width {
     
@@ -278,6 +278,11 @@
 
 .site-header {
 	background: $header-background;
+	height: $header-height;
+	padding-left: 45px;
+	padding-right: 45px;
+	position: relative;
+	z-index: 110;	
 }
 
 
@@ -293,7 +298,7 @@
 
 
 .site-branding {
-	max-width: 230px;
+	max-width: $logo-width;
 	padding: 1rem;
 	padding-left: 0;
 
@@ -312,20 +317,6 @@
     }
 }
 
-
-
-
-
-$push-menu-width: 100%;
-$push-menu-background-color: white;
-
-$push-menu-logo-fill-color: black;
-
-$push-menu-list-item-background-color: #fff;
-$push-menu-list-item-background-color--hover: #fafafa;
-$push-menu-list-item-link-color: black;
-$push-menu-list-item-border-color: #e3e3e3;
-$push-menu-header-background: #fafafa;
 
 
 .push-menu {
@@ -449,18 +440,12 @@ body.mobile-menu-open {
 	display: none;
     right: 30px;
 	z-index: 100000000;
-	background: #fff;
-	border: 1px solid #f1f1f1;
+	background: $hamburger-background-color;
     box-shadow: 0px 2px 5px #0000000e;
 	cursor: pointer;
 
 	&:hover {
 		background: rgb(53, 46, 46);
-		border: none;
-		.hamburger__line {
-			background-color: white;
-		}
-
 	}
 
 	@media(max-width: 380px) {
@@ -477,7 +462,7 @@ body.mobile-menu-open {
 .hamburger__line {
 	width: 20px;
 	height: 3px;
-	background: $color-brand-primary;
+	background: white;
 	display: block;
 	margin: 3px auto;
 	z-index: 1000000;
@@ -652,6 +637,8 @@ body.mobile-menu-open {
 	justify-content: center;
 	align-items: center;
 	font-family: $font-label;
+	margin-left: auto;
+	margin-top: -70px;
 
 	@media(max-width: $mobile-nav-visible-max) {
 		display: none;
@@ -689,17 +676,17 @@ body.mobile-menu-open {
 }
 .hover-nav ul li a {
 	display: block;
-	padding: 1.5rem 1.3rem;
+	padding: 1.5rem 1.2rem;
 	color: $main-nav-link-color;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: left;
 	text-decoration: none;
 
 
 	&:hover {
-		background: darken($main-nav-background-color, 10%);
+		background: $nav-item-background-color--hover;
 	}
 }
 .hover-nav ul ul {
@@ -731,6 +718,7 @@ body.mobile-menu-open {
 	visibility: visible;
 	opacity: 1;
 	z-index: 2;
+	background: rgba(255, 255, 255, 0.25);
 
 	li {
 		a {
@@ -1111,7 +1099,6 @@ flex: 1 0 50%;
 
 
 	}
-
 }
 
 
@@ -1120,4 +1107,17 @@ flex: 1 0 50%;
 	max-width: 850px;
 	margin-left: auto !important;
 	margin-right: auto !important;
+}
+
+.site-content {
+	margin-top: -100px;
+}
+
+.site-content {
+	min-height: 80vh;
+}
+
+.content-area {
+	z-index: 100;
+	background: white;
 }

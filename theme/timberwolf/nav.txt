@@ -1,0 +1,12 @@
+
+                <!-- 			<div class="socials mar-t-3">
+				<a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+				<a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+			</div> -->
+
+
+                <!-- 			<div class="phone mar-t-3">
+			<i class="fas fa-phone-alt"></i>&nbsp; 0405 519 109
+			</div>
+ -->

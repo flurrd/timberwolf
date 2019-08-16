@@ -11,53 +11,54 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-max-width">
+<footer id="colophon" class="site-footer">
+    <div class="site-max-width">
 
-			<div class="footer-card-wrap">
-				<div class="footer__logo">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<?php
+        <div class="footer-card-wrap">
+            <div class="footer__logo">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <?php
 								include('template-parts/logo-svg.php');?>
 
-					</a>	
-				</div>
+                </a>
+            </div>
 
-			</div>
+        </div>
 
-			<div class="footer-nav">
-					<?php
+        <div class="footer-nav">
+            <?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu',
 						'menu_id'        => 'footer-nav',
 					) );
-					?>				
-			</div>
+					?>
+        </div>
 
 
 
-			<small class="copyright mar-t-1 d-block text-center">© 2019 Sydney Timber Solutions | <a href="/privacy-policy/">Privacy Policy</a> | All rights reserved.</small>
+        <small class="copyright mar-t-1 d-block text-center">© 2019 Sydney Timber Solutions | <a
+                href="/privacy-policy/">Privacy Policy</a> | All rights reserved.</small>
 
-		</div>
-	
-		
-	</footer><!-- #colophon -->
+    </div>
+
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 <aside class="push-menu">
 
-	<div class="push-menu-link-lists">
+    <div class="push-menu-link-lists">
 
-	<?php
+        <?php
 				wp_nav_menu( array(
 					'theme_location' => 'mobile-menu',
 					'menu_id'        => 'push-menu',
 				) );
 				?>
-	</div>
+    </div>
 
 </aside>
 
@@ -65,6 +66,10 @@
 </div>
 
 
+<script type="text/javascript">
+var s = skrollr.init();
+</script>
 
 </body>
+
 </html>

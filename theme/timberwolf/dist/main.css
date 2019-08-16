@@ -763,8 +763,69 @@ object {
 .text-right {
   text-align: right !important; }
 
+.landing-hero-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: -1; }
+  .landing-hero-wrapper .landing-hero {
+    position: relative;
+    margin-bottom: 0;
+    height: 80vh; }
+    .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper {
+      left: 0 !important;
+      position: fixed;
+      overflow: hidden;
+      width: 100%;
+      z-index: 1; }
+      .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content {
+        height: 80vh; }
+        .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content h2 {
+          z-index: 100;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          transform: translateY(-50%);
+          text-align: center;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          font-weight: 100;
+          color: white;
+          padding-left: 8%;
+          padding-right: 8%; }
+          @media screen and (min-width: 600px) {
+            .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content h2 {
+              font-size: 2rem; } }
+          @media screen and (min-width: 1000px) {
+            .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content h2 {
+              font-size: 2.5rem; } }
+          @media screen and (min-width: 1200px) {
+            .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content h2 {
+              font-size: 3rem; } }
+        .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content .image {
+          background-image: url("https://sydneytimbersolutions.com.au/wp-content/uploads/2019/08/STS-HOME-PAGE-HERO-IMAGE-iStock-629074900.jpg");
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-position: center 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100%; }
+          .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content .image img {
+            display: none !important;
+            width: 0;
+            height: 0; }
+
+.site-content {
+  min-height: 80vh; }
+
+.content-area {
+  z-index: 100;
+  background: white; }
+
 .logo-svg-el path {
-  fill: #3e4555; }
+  fill: white; }
 
 .site-max-width {
   margin-left: auto;
@@ -915,7 +976,7 @@ object {
   margin-left: auto;
   font-family: "Montserrat", sans-serif;
   display: block; }
-  @media (max-width: 1070px) {
+  @media (max-width: 1150px) {
     .main-navigation {
       display: none; } }
   .main-navigation .top-menu-items {
@@ -954,7 +1015,12 @@ object {
   width: 50%; }
 
 .site-header {
-  background: #fff; }
+  background: transparent;
+  height: 100px;
+  padding-left: 45px;
+  padding-right: 45px;
+  position: relative;
+  z-index: 110; }
 
 .site-header-flex-container {
   display: flex;
@@ -962,7 +1028,7 @@ object {
   align-items: center; }
 
 .site-branding {
-  max-width: 230px;
+  max-width: 180px;
   padding: 1rem;
   padding-left: 0; }
   .site-branding svg {
@@ -978,9 +1044,9 @@ object {
 .push-menu {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 70%;
   height: 100%;
-  left: -100%;
+  left: -70%;
   background: white;
   transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   overflow-y: scroll;
@@ -1009,19 +1075,19 @@ object {
 body.mobile-menu-open {
   overflow-x: hidden; }
   body.mobile-menu-open .layout-container {
-    left: 100%;
+    left: 70%;
     overflow: hidden; }
   body.mobile-menu-open .fixed-header {
-    left: 100%; }
+    left: 70%; }
   body.mobile-menu-open .push-menu-tint {
     display: block;
-    left: 100%;
+    left: 70%;
     opacity: 1;
     pointer-events: inherit; }
   body.mobile-menu-open .push-menu {
     left: 0; }
   body.mobile-menu-open .main-nav-wrapper {
-    left: 100%; }
+    left: 70%; }
 
 .main-nav-wrapper {
   left: 0;
@@ -1038,7 +1104,7 @@ body.mobile-menu-open {
   .push-menu__header-brand-link svg {
     width: 136px; }
     .push-menu__header-brand-link svg path {
-      fill: black; }
+      fill: white; }
 
 .push-menu-tint {
   position: fixed;
@@ -1069,26 +1135,22 @@ body.mobile-menu-open {
   display: none;
   right: 30px;
   z-index: 100000000;
-  background: #fff;
-  border: 1px solid #f1f1f1;
+  background: transparent;
   box-shadow: 0px 2px 5px #0000000e;
   cursor: pointer; }
   .hamburger:hover {
-    background: #352e2e;
-    border: none; }
-    .hamburger:hover .hamburger__line {
-      background-color: white; }
+    background: #352e2e; }
   @media (max-width: 380px) {
     .hamburger {
       padding: 1rem 1.1rem; } }
-  @media (max-width: 1070px) {
+  @media (max-width: 1150px) {
     .hamburger {
       display: block; } }
 
 .hamburger__line {
   width: 20px;
   height: 3px;
-  background: #3e4555;
+  background: white;
   display: block;
   margin: 3px auto;
   z-index: 1000000; }
@@ -1210,13 +1272,15 @@ body.mobile-menu-open {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat", sans-serif; }
-  @media (max-width: 1070px) {
+  font-family: "Montserrat", sans-serif;
+  margin-left: auto;
+  margin-top: -70px; }
+  @media (max-width: 1150px) {
     .hover-nav {
       display: none; } }
 
 .hover-nav {
-  background: #3e4555; }
+  background: transparent; }
 
 /* common */
 .hover-nav ul {
@@ -1242,21 +1306,21 @@ body.mobile-menu-open {
 
 .hover-nav ul li a {
   display: block;
-  padding: 1.5rem 1.3rem;
+  padding: 1.5rem 1.2rem;
   color: white;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   text-decoration: none; }
   .hover-nav ul li a:hover {
-    background: #282d38; }
+    background: rgba(255, 255, 255, 0.3); }
 
 .hover-nav ul ul {
   position: absolute;
   top: 100%;
   max-width: 100%;
-  background: #3e4555; }
+  background: transparent; }
 
 .hover-nav ul ul li {
   float: none;
@@ -1279,10 +1343,11 @@ body.mobile-menu-open {
 .nav02 ul li:hover > ul {
   visibility: visible;
   opacity: 1;
-  z-index: 2; }
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.25); }
   .nav02 ul li:hover > ul li a {
     padding: 1.2rem 1.3rem;
-    border-top: 1px solid #282d38; }
+    border-top: 1px solid rgba(0, 0, 0, 0); }
 
 div.wpcf7 {
   width: 90%; }
@@ -1484,12 +1549,12 @@ footer .logo-svg-el path {
 .social-link {
   font-size: 2rem;
   margin-left: 0.5rem;
-  color: #3e4555; }
+  color: white; }
 
 .phone {
   font-size: 0.9rem;
-  color: #3e4555;
-  border: 1px solid #3e4555;
+  color: white;
+  border: 1px solid white;
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
   margin-left: 2rem; }
@@ -1545,4 +1610,14 @@ footer .logo-svg-el path {
   max-width: 850px;
   margin-left: auto !important;
   margin-right: auto !important; }
+
+.site-content {
+  margin-top: -100px; }
+
+.site-content {
+  min-height: 80vh; }
+
+.content-area {
+  z-index: 100;
+  background: white; }
 

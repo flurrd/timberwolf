@@ -9,12 +9,18 @@ $site-white-color: #fff;
 
 
 
-$header-background: $site-white-color;
+$header-background: transparent;
+$header-height: 100px;
+$logo-width: 180px;
+$hamburger-background-color: transparent;
+$hamburger-line-color: white;
+
 $main-nav-link-color: white;
-$main-nav-background-color: #3e4555;
-$color-logo-fill: $color-brand-primary;
-
-
+$main-nav-background-color: transparent;
+$color-logo-fill: white;
+$nav-item-background-color--hover: rgba(255, 255, 255, 0.3);
+$sub-menu-background-color: rgba(255, 255, 255, 0.6);
+$landing-hero-text-color: white;
 
 
 $font-body:'Montserrat', sans-serif; 
@@ -25,7 +31,7 @@ $font-nav: $font-body;
 
 $site-max-width: 1000px;
 
-$mobile-nav-visible-max: 1070px;
+$mobile-nav-visible-max: 1150px;
 
 $ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 $ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -63,6 +69,18 @@ $site-max-width: 1200px;
 // Error
 $color-error: #d0011b;
 
+
+
+$push-menu-width: 70%;
+$push-menu-background-color: white;
+
+$push-menu-logo-fill-color: white;
+
+$push-menu-list-item-background-color: #fff;
+$push-menu-list-item-background-color--hover: #fafafa;
+$push-menu-list-item-link-color: black;
+$push-menu-list-item-border-color: #e3e3e3;
+$push-menu-header-background: #fafafa;
 
 
 // Breakpoints
