@@ -386,7 +386,7 @@ body {
   color: #231f20; }
 
 a {
-  color: #3e4555; }
+  color: #000000; }
 
 em {
   font-style: italic; }
@@ -401,7 +401,7 @@ h6 {
   margin-bottom: 32px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #3e4555; }
+  color: #000000; }
 
 h1, h2, h3, h4 {
   font-weight: 600; }
@@ -438,10 +438,10 @@ a {
   text-decoration: none; }
 
 .rte a {
-  color: #3e4555;
+  color: #000000;
   text-decoration: none; }
   .rte a:hover {
-    color: #3e4555; }
+    color: #000000; }
 
 strong {
   font-weight: bold; }
@@ -490,7 +490,7 @@ input[type="submit"] {
   border: none;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #3e4555;
+  background: #000000;
   color: white;
   font-size: 1rem;
   line-height: 1;
@@ -502,8 +502,8 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    background: #282d38;
-    border-color: #3e4555; }
+    background: black;
+    border-color: #000000; }
 
 button:hover,
 input[type="button"]:hover,
@@ -559,7 +559,7 @@ input[type="color"]:focus,
 textarea:focus {
   color: #111;
   outline: none;
-  border: 2px solid #3e4555; }
+  border: 2px solid #000000; }
 
 select {
   border: 1px solid #ccc;
@@ -568,10 +568,10 @@ select {
   font-size: 1rem; }
   select:focus {
     outline: none;
-    border: 2px solid #3e4555; }
+    border: 2px solid #000000; }
 
 .btn {
-  background: #3e4555;
+  background: #000000;
   color: white !important;
   padding: 10px 13px;
   border: none;
@@ -581,7 +581,7 @@ select {
   text-transform: uppercase;
   font-size: 14px; }
   .btn:hover {
-    background: #282d38; }
+    background: black; }
 
 /*--------------------------------------------------------------
 # Media
@@ -771,7 +771,8 @@ object {
   .landing-hero-wrapper .landing-hero {
     position: relative;
     margin-bottom: 0;
-    height: 80vh; }
+    height: 75vh;
+    min-height: 450px; }
     .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper {
       left: 0 !important;
       position: fixed;
@@ -779,7 +780,8 @@ object {
       width: 100%;
       z-index: 1; }
       .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content {
-        height: 80vh; }
+        height: 75vh;
+        min-height: 450px; }
         .landing-hero-wrapper .landing-hero .landing-hero-image-wrapper .landing-hero-content h2 {
           z-index: 100;
           position: absolute;
@@ -910,7 +912,7 @@ object {
     .feature-box:hover img {
       background-size: 200%; }
     .feature-box:hover .feature-box__link-txt {
-      color: #3e4555; }
+      color: #000000; }
 
 .flex-grid__col:first-child {
   margin-left: 0; }
@@ -1022,7 +1024,7 @@ object {
   background: transparent;
   height: 100px;
   padding-left: 45px;
-  padding-right: 45px;
+  padding-right: 10px;
   position: relative;
   z-index: 110; }
 
@@ -1039,7 +1041,8 @@ object {
     width: 100%; }
 
 .site-footer {
-  background: #3e4555;
+  background: black;
+  background-image: url("https://sydneytimbersolutions.com.au/wp-content/uploads/2019/08/STS-HOME-PAGE-HERO-IMAGE-iStock-629074900.jpg");
   color: white;
   padding: 4rem 2rem; }
   .site-footer a {
@@ -1048,29 +1051,31 @@ object {
 .push-menu {
   position: fixed;
   top: 0;
-  width: 70%;
+  right: 0;
+  width: 350px;
   height: 100%;
-  left: -70%;
-  background: white;
-  transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  overflow-y: scroll;
+  transform: translateX(100%);
+  background: black;
+  transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  overflow-y: auto;
   z-index: 2000;
   max-height: 100vh;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  font-weight: 600; }
   .push-menu h5 {
     font-size: 1rem;
-    color: black;
+    color: white;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     padding: 0.9rem 1rem 0.5rem 1rem; }
+  .push-menu .site-branding {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px; }
 
-.layout-container {
-  left: 0;
-  transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+.container-is-pushed {
+  transform: translateX(0);
+  transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   min-width: 100%;
   max-width: 100%;
   position: relative;
@@ -1078,20 +1083,20 @@ object {
 
 body.mobile-menu-open {
   overflow-x: hidden; }
-  body.mobile-menu-open .layout-container {
-    left: 70%;
+  body.mobile-menu-open .container-is-pushed {
+    transform: translateX(-350px);
     overflow: hidden; }
   body.mobile-menu-open .fixed-header {
-    left: 70%; }
+    transform: translateX(-350px); }
   body.mobile-menu-open .push-menu-tint {
     display: block;
-    left: 70%;
+    transform: translateX(-350px);
     opacity: 1;
     pointer-events: inherit; }
   body.mobile-menu-open .push-menu {
-    left: 0; }
+    transform: translateX(0); }
   body.mobile-menu-open .main-nav-wrapper {
-    left: 70%; }
+    transform: translateX(-350px); }
 
 .main-nav-wrapper {
   left: 0;
@@ -1099,7 +1104,7 @@ body.mobile-menu-open {
 
 .push-menu__header {
   padding: 1rem;
-  background: #fafafa; }
+  background: black; }
 
 .push-menu__header-brand-link {
   display: flex;
@@ -1112,7 +1117,7 @@ body.mobile-menu-open {
 
 .push-menu-tint {
   position: fixed;
-  z-index: 100;
+  z-index: 120;
   top: 0;
   bottom: 0;
   right: 0;
@@ -1136,7 +1141,6 @@ body.mobile-menu-open {
   position: absolute;
   padding: 0.8rem 1.2rem;
   transition: margin-left 0.2 cubic-bezier(0.215, 0.61, 0.355, 1);
-  display: none;
   right: 30px;
   z-index: 100000000;
   background: transparent;
@@ -1144,12 +1148,9 @@ body.mobile-menu-open {
   cursor: pointer; }
   .hamburger:hover {
     background: #352e2e; }
-  @media (max-width: 380px) {
+  @media screen and (max-width: 380px) {
     .hamburger {
       padding: 1rem 1.1rem; } }
-  @media (max-width: 1150px) {
-    .hamburger {
-      display: block; } }
 
 .hamburger__line {
   width: 20px;
@@ -1170,26 +1171,26 @@ body.mobile-menu-open {
     background: white;
     font-family: "Montserrat", sans-serif; }
   .push-menu-link-lists ul {
-    background: #fff;
+    background: black;
     padding: 0;
     margin: 0;
     list-style: none; }
     .push-menu-link-lists ul + .push-menu-link-lists ul {
       margin-top: 1rem; }
     .push-menu-link-lists ul li {
-      border-bottom: 1px solid #e3e3e3; }
+      border-bottom: 1px solid black; }
       .push-menu-link-lists ul li a {
         display: block;
-        padding: 0.5rem 1rem;
-        color: black;
+        padding: 0.5rem 2rem;
+        color: white;
         font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
         text-transform: uppercase;
-        font-size: 2rem; }
-        @media (max-width: 500px) {
-          .push-menu-link-lists ul li a {
-            font-size: 1.5rem; } }
+        font-size: 1.2rem; }
         .push-menu-link-lists ul li a:hover {
-          color: #3e4555; }
+          background: #2e2e2e;
+          color: white; }
 
 .about-flex-wrapper {
   display: flex;
@@ -1310,10 +1311,10 @@ body.mobile-menu-open {
 
 .hover-nav ul li a {
   display: block;
-  padding: 1.5rem 1.2rem;
+  padding: 1rem 0.7rem;
   color: white;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 100;
   font-size: 12px;
   text-align: left;
   text-decoration: none; }
@@ -1629,10 +1630,17 @@ footer .logo-svg-el path {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  display: block; }
+  display: block;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .landing-content-hero img {
+    width: 100%; }
   @media screen and (min-width: 900px) {
     .landing-content-hero {
       display: flex; } }
+
+.landing-content-hero.landing-content-hero--reverse {
+  flex-direction: row-reverse; }
 
 .landing-content-hero__col {
   padding: 1rem; }
@@ -1647,5 +1655,13 @@ footer .logo-svg-el path {
 .landing-content-box-links {
   max-width: 1000px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.landing-section-alt-wrapper {
+  background: #f0f0f0; }
+
+.entry-content {
+  padding-bottom: 3rem; }
 

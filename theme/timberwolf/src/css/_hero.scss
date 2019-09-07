@@ -8,7 +8,8 @@
 	.landing-hero {
 		position: relative;
 		margin-bottom: 0;
-		height: 80vh;
+		height: 75vh;
+		min-height: 450px;
 
 		.landing-hero-image-wrapper {
 			left: 0!important;
@@ -18,7 +19,8 @@
 			z-index: 1;
 
 			.landing-hero-content {
-				height: 80vh;
+				height: 75vh;
+				min-height: 450px;
 
 				h2 {
 					z-index: 100;

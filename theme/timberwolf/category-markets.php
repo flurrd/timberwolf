@@ -10,7 +10,7 @@ get_header();
 ?>
 
 
-<div class="landing-hero-wrapper">
+<div class="landing-hero-wrapper not-landing">
     <div class="landing-hero">
         <div class="landing-hero-image-wrapper" data-parallax="yes">
             <div class="landing-hero-image-wrapper" data-start="transform: translateY(0px);"

@@ -23,7 +23,7 @@ get_header();
             <div class="landing-hero-image-wrapper" data-start="transform: translateY(0px);"
                 data-1440="transform: translateY(-500px);">
                 <div class="landing-hero-content">
-                    <h2 data-0=" opacity: 1; top: 50%;" data-300="opacity: 0; top: 10%;">Pre-Coating</h2>
+                    <h2 data-0=" opacity: 1; top: 50%;" data-300="opacity: 0; top: 10%;"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></h2>
                     <div class="image">
                         <img src="https://sydneytimbersolutions.com.au/wp-content/uploads/2019/08/STS-HOME-PAGE-HERO-IMAGE-iStock-629074900.jpg"
                             alt="">

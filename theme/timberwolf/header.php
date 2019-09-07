@@ -21,14 +21,14 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="skrollr">
     <div id="page" class="site">
         <a class="skip-link screen-reader-text"
             href="#content"><?php esc_html_e( 'Skip to content', 'timberwolf' ); ?></a>
 
         <header id="masthead" class="site-header">
 
-            <div class="site-header-flex-container padd-1">
+            <div class="site-header-flex-container padd-1 container-is-pushed">
 
                 <div class="site-branding">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -47,16 +47,16 @@
 							?>
                     </div>
                 </nav>
-
-                <div class="hamburger-pos-wrapper">
-                    <div class="hamburger">
-                        <span class="hamburger__line"></span>
-                        <span class="hamburger__line"></span>
-                        <span class="hamburger__line"></span>
-                    </div>
-                </div>
             </div>
 
         </header><!-- #masthead -->
 
-        <div id="content" class="site-content">
+        <div class="hamburger-pos-wrapper">
+            <div class="hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </div>
+        </div>        
+
+        <div id="content" class="site-content container-is-pushed">

@@ -2,8 +2,8 @@ $root-font-size: 16px;
 $color-text: #4c4434;
 $color-borders: #e3e3e3;
 
-$color-brand-primary: #3e4555;
-$color-brand-black: #1f1f1f;
+$color-brand-primary: #000000;
+$color-brand-black: black;
 
 $site-white-color: #fff;
 
@@ -22,7 +22,7 @@ $nav-item-background-color--hover: rgba(255, 255, 255, 0.3);
 $sub-menu-background-color: rgba(255, 255, 255, 0.6);
 $landing-hero-text-color: white;
 
-
+$footer-background-color: black;
 $font-body:'Montserrat', sans-serif; 
 $font-title: $font-body;
 
@@ -70,20 +70,22 @@ $site-max-width: 1200px;
 $color-error: #d0011b;
 
 
-
-$push-menu-width: 70%;
-$push-menu-background-color: white;
+$push-menu-width: 350px;
+$push-menu-background-color: black;
 
 $push-menu-logo-fill-color: white;
-
-$push-menu-list-item-background-color: #fff;
-$push-menu-list-item-background-color--hover: #fafafa;
-$push-menu-list-item-link-color: black;
-$push-menu-list-item-border-color: #e3e3e3;
-$push-menu-header-background: #fafafa;
+$push-menu-list-item-background-color:black;
+$push-menu-list-item-background-color--hover: rgb(46, 46, 46);
+$push-menu-list-item-font-size: 1.2rem;
+$push-menu-list-item-link-color: white;
+$push-menu-list-item-link-color--hover: white;
+$push-menu-list-item-border-color: black;
+$push-menu-header-background: black;
 
 
 // Breakpoints
 $breakpoint-sml: 760px;
 $breakpoint-med: 960px;
 $breakpoint-lrg: 1200px;
+
+

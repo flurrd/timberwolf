@@ -52,6 +52,14 @@
 
     <div class="push-menu-link-lists">
 
+    <div class="site-branding">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                        <?php
+				include('template-parts/logo-svg.php');?>
+
+                    </a>
+                </div><!-- .site-branding -->    
+
         <?php
 				wp_nav_menu( array(
 					'theme_location' => 'mobile-menu',

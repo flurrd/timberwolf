@@ -38,9 +38,9 @@ get_header();
 
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main site-max-width padd-b-3 padd-t-3">
+    <main id="main" class="site-main padd-b-3">
 
-        <section class="landing-content-hero">
+        <section class="landing-content-hero site-max-width">
             <div class="landing-content-hero__col landing-content-hero__col--text">
                 <div class="landing-content-hero__rte">
                 <h2>Protect timber before it's installed with our pre-coating service.</h2>
@@ -53,7 +53,44 @@ get_header();
             </div>
         </section>
 
-        <section class="landing-content-box-links">
+        <div class="landing-section-alt-wrapper">
+            <section class="landing-content-hero landing-content-hero--reverse  site-max-width">
+                <div class="landing-content-hero__col landing-content-hero__col--text">
+                    <div class="landing-content-hero__rte">
+                    <h2>Give your timber a new lease on life with our restoration and maintenance services.</h2>
+                    <p>We'll bring to life amd maximise the protection of your timber cladding, decking or any other external timber.</p>
+                    <a class="btn btn--default" href="/restoration-maintenance/">Find out more</a>
+                    </div>
+                </div>
+                <div class="landing-content-hero__col landing-content-hero__col--img">
+                    <img class="landing-content-hero__img" src="https://sydneytimbersolutions.com.au/wp-content/uploads/2019/08/nest.jpg" alt="">
+                </div>
+            </section>
+
+        </div>
+
+
+        <section class="landing-content-hero site-max-width">
+            <div class="landing-content-hero__col landing-content-hero__col--text">
+                <div class="landing-content-hero__rte">
+                <h2>When only the best will do.</h2>
+                <p>When it comes to enhancing and protecting timber, we use Cutek. Cutek oil penetrates deep into the timber so it protects from within.
+                    Which helps restore moisture and maintains the integrity of the timber.
+                </p>
+                <a class="btn btn--default" href="/pre-coating/">Find out more</a>
+                </div>
+            </div>
+            <div class="landing-content-hero__col landing-content-hero__col--img">
+                <section class="video-section">
+                <div class="resp-container">
+                    <iframe class="resp-iframe" src="https://www.youtube.com/embed/JK0ENtp5__k" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                </div>		
+	</section>
+            </div>
+        </section>
+
+<!-- 
+        <section class="landing-content-box-links site-max-width padd-1">
             <div class="flex-grid__row">
                 <div class="flex-grid__col">
                     <a class="feature-box" href="/pre-coating/">
@@ -88,7 +125,7 @@ get_header();
                     </a>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main><!-- #main -->
 </div><!-- #primary -->
 
