@@ -7,18 +7,14 @@ import '../js/skrollr.min.js'
 
 $(function () 
 {
+
+    var s = skrollr.init({forceHeight: false});
+
+
+
+    var windowWidth = $(window).width();
     // Init function
-    function skrollrInit() 
-    {
-      skrollr.init(yourOptions);
-    }
-  
-    // If window width is large enough, initialize skrollr
-    if ($(window).width() > 767) 
-    {
-      skrollrInit();
-      forceHeight: false
-    }
+
   
     // On resize, check window width, if too small
     // and skrollr instance exists, destroy;
@@ -29,13 +25,13 @@ $(function ()
       var _skrollr = skrollr.get(); // get() returns the skrollr instance or undefined
       var windowWidth = $(window).width();
   
-      if ( windowWidth <= 767 && _skrollr !== undefined ) 
+      if ( windowWidth <= 900 && _skrollr !== undefined ) 
       {
         _skrollr.destroy();
       } 
-      else if ( windowWidth > 767 && _skrollr === undefined ) 
+      else if ( windowWidth > 900 && _skrollr === undefined ) 
       {
-        skrollrInit();
+        skrollr.init({forceHeight: false});
       }
     });
 });

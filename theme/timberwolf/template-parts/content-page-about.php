@@ -14,7 +14,7 @@
 
 
 	<?php timberwolf_post_thumbnail(); ?>
-	<div class="entry-content page-rte site-max-width padd-b-3">
+	<div class="entry-content page-rte page-rte-max-width  padd-b-3">
 
         
         <section class="padd-t-3 page-rte">

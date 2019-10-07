@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="site-max-width" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="page-rte-max-width" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
